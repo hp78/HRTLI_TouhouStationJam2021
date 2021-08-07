@@ -7,10 +7,14 @@ public class PlayerController : MonoBehaviour
     public enum PlayerState { IDLE, CASTING, BAIT, REELING, CAUGHT, TIMEOUT, END };
     public PlayerState currState = PlayerState.IDLE;
 
+    public LineRenderer lineRend;
+    public Transform tfRodEnd;
+    public Transform tfHook;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        lineRend.positionCount = 2;
     }
 
     // Update is called once per frame
@@ -39,6 +43,9 @@ public class PlayerController : MonoBehaviour
             default:
                 break;
         }
+
+        lineRend.SetPosition(0, tfRodEnd.position);
+        lineRend.SetPosition(1, tfHook.position);
     }
 
     void Idle()

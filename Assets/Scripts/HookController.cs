@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class HookController : MonoBehaviour
 {
-    public enum HookState { CAST, SINK, REEL, BREAK };
+    public enum HookState { CAST, SINK, REEL, BREAK, END };
     public HookState currHookState = HookState.SINK;
 
-    public float moveSpeed = 1.0f;
+    public float reelSpeed = 1.0f;
+    public float hookSpeed = 1.0f;
     public float positionEpsilon = 0.5f;
 
     // Start is called before the first frame update
@@ -22,6 +23,7 @@ public class HookController : MonoBehaviour
         switch (currHookState)
         {
             case HookState.CAST:
+                Cast();
                 break;
 
             case HookState.SINK:
@@ -33,17 +35,38 @@ public class HookController : MonoBehaviour
                 break;
 
             case HookState.BREAK:
+                Break();
+                break;
+
+            case HookState.END:
+                End();
                 break;
         }
 
         GameManager.instance.depthText.text = (transform.position.y * -1).ToString("#");
     }
 
+    void Cast()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            currHookState = HookState.SINK;
+        }
+    }
     void Sink()
     {
-        if(transform.position.y > -100f)
+        if (Input.GetMouseButtonDown(0))
+        {
+            currHookState = HookState.REEL;
+        }
+
+        if (transform.position.y > -100f)
         {
             transform.position -= new Vector3(0, 10, 0) * Time.deltaTime;
+        }
+        else
+        {
+            currHookState = HookState.REEL;
         }
     }
 
@@ -55,12 +78,32 @@ public class HookController : MonoBehaviour
 
             if(mouseWorldPos.x > transform.position.x + positionEpsilon)
             {
-                transform.position += new Vector3(1, 0) * moveSpeed * Time.deltaTime;
+                transform.position += new Vector3(1, 0) * hookSpeed * Time.deltaTime;
             }
             else if (mouseWorldPos.x < transform.position.x - positionEpsilon)
             {
-                transform.position += new Vector3(-1, 0) * moveSpeed * Time.deltaTime;
+                transform.position += new Vector3(-1, 0) * hookSpeed * Time.deltaTime;
+            }
+
+            if(mouseWorldPos.y > transform.position.y + positionEpsilon)
+            {
+                transform.position += new Vector3(0, 1) * reelSpeed * Time.deltaTime;
             }
         }
+
+        if(transform.position.y > -1)
+        {
+            currHookState = HookState.END;
+        }
+    }
+
+    void Break()
+    {
+        currHookState = HookState.CAST;
+    }
+
+    void End()
+    {
+        currHookState = HookState.CAST;
     }
 }
