@@ -38,16 +38,21 @@ public class ShopController : MonoBehaviour
         instance = this;
         gisList = new List<GridItemScript>();
         CreateItems();
+
+        tmpCurrCashText.text = gameStat.currMoney.ToString();
     }
 
     void CreateItems()
     {
-        foreach(ItemSO i in GetShopItemList())
+        for(int i = 0; i < GetShopItemList().Count; ++i)
         {
             GameObject go = Instantiate(pfShopItem, shopItemContent);
             GridItemScript gis = go.GetComponent<GridItemScript>();
+            gis.itemSO = GetShopItemList()[i];
             gisList.Add(gis);
         }
+
+        RefreshAllItems();
     }
 
     // Update is called once per frame
@@ -56,11 +61,13 @@ public class ShopController : MonoBehaviour
         
     }
 
-    public void SelectItem(ItemSO item, bool isOwned)
+    public void SelectItem(ItemSO item)
     {
         itemSprite.sprite = item.itemSprite;
         tmpItemName.text = item.itemName;
-        if(isOwned)
+        currSelectItem = item;
+
+        if (item.isUnlocked)
         {
             buyButton.interactable = false;
             tmpBuyText.text = "Owned";
@@ -72,7 +79,7 @@ public class ShopController : MonoBehaviour
             tmpBuyText.text = "Buy";
             tmpPriceText.text = "$" +item.price;
         }
-        //tmpItemDesc =;
+        tmpItemDesc.text = item.GetItemDescChunk();
     }
 
     public List<ItemSO> GetShopItemList()
@@ -141,6 +148,19 @@ public class ShopController : MonoBehaviour
                 gameStat.currBait = itemSO;
                 break;
         }
+    }
+
+    public void PurchaseItem(ItemSO item)
+    {
+        if (gameStat.currMoney >= item.price)
+        {
+            gameStat.currMoney -= item.price;
+            item.isUnlocked = true;
+
+            tmpCurrCashText.text = gameStat.currMoney.ToString();
+        }
+
+        RefreshAllItems();
     }
 
     public void RefreshAllItems()

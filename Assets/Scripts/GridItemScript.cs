@@ -12,9 +12,14 @@ public class GridItemScript : MonoBehaviour
     [Space(5)]
     public Image itemImage;
     public Button buyButton;
+    public TMP_Text tmpPriceText;
     public TMP_Text tmpEquippedText;
 
-   public void Init(ItemSO nItemSO)
+    private void Start()
+    {
+        tmpPriceText.text = itemSO.price.ToString();
+    }
+    public void Init(ItemSO nItemSO)
     {
         itemSO = nItemSO;
     }
@@ -27,7 +32,7 @@ public class GridItemScript : MonoBehaviour
         }
         else
         {
-            ShopController.instance.currSelectItem = itemSO;
+            ShopController.instance.SelectItem(itemSO);
         }
 
         ShopController.instance.RefreshAllItems();
@@ -35,20 +40,12 @@ public class GridItemScript : MonoBehaviour
 
     public void BuyItem()
     {
-        if(gameStat.currMoney >= itemSO.price)
-        {
-            gameStat.currMoney -= itemSO.price;
-            itemSO.isUnlocked = true;
-        }
-
-        ShopController.instance.RefreshAllItems();
+        ShopController.instance.PurchaseItem(itemSO);
     }
 
     public void RefreshItem()
     {
-        if (itemSO.isUnlocked)
-            buyButton.gameObject.SetActive(false);
-        else
-            buyButton.gameObject.SetActive(true);
+        buyButton.gameObject.SetActive(!itemSO.isUnlocked);
+        tmpEquippedText.gameObject.SetActive(itemSO == ShopController.instance.GetShopEquippedItem());
     }
 }
