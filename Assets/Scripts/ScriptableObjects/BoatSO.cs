@@ -7,4 +7,10 @@ public class BoatSO : ItemSO
 {
     [Space(5)]
     public int maxWeight;
+
+    public override string GetItemDescChunk()
+    {
+        return "" + flavorText + "\n\n"
+            + "Max Weight " + maxWeight + "\n";
+    }
 }

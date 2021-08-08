@@ -10,10 +10,10 @@ public class GameStatSO : ScriptableObject
     public int currMoney;
 
     [Space(5)]
-    public BoatSO currBoat;
-    public RodSO currRod;
-    public BaitSO currBait;
-    public CoolerSO currCooler;
+    public ItemSO currBoat;
+    public ItemSO currRod;
+    public ItemSO currBait;
+    public ItemSO currCooler;
 
     [Space(5)]
     public int currBoatIndex;
@@ -22,10 +22,10 @@ public class GameStatSO : ScriptableObject
     public int currCoolerIndex;
 
     [Header("Items")]
-    public List<BoatSO> boatList;
-    public List<RodSO> rodList;
-    public List<BaitSO> baitList;
-    public List<CoolerSO> coolerList;
+    public List<ItemSO> boatList;
+    public List<ItemSO> rodList;
+    public List<ItemSO> baitList;
+    public List<ItemSO> coolerList;
 
     [Header("Fish bestiary")]
     public List<FishSO> fishList;

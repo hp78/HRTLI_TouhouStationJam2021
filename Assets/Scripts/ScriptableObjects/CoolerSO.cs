@@ -7,4 +7,10 @@ public class CoolerSO : ItemSO
 {
     [Space(5)]
     public int timeBonus;
+
+    public override string GetItemDescChunk()
+    {
+        return "" + flavorText + "\n\n"
+            + "Endurance " + timeBonus + "\n";
+    }
 }
