@@ -40,6 +40,7 @@ public class ShopController : MonoBehaviour
         CreateItems();
 
         tmpCurrCashText.text = gameStat.currMoney.ToString();
+        SelectItem(GetShopItemList()[0]);
     }
 
     void CreateItems()
@@ -53,12 +54,6 @@ public class ShopController : MonoBehaviour
         }
 
         RefreshAllItems();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void SelectItem(ItemSO item)
