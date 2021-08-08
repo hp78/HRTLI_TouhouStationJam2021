@@ -21,9 +21,12 @@ public class GameStatSO : ScriptableObject
     public int currBaitIndex;
     public int currCoolerIndex;
 
-    [Space(5)]
+    [Header("Items")]
     public List<BoatSO> boatList;
     public List<RodSO> rodList;
     public List<BaitSO> baitList;
     public List<CoolerSO> coolerList;
+
+    [Header("Fish bestiary")]
+    public List<FishSO> fishList;
 }

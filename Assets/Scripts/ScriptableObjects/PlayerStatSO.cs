@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerStatSO : ScriptableObject
 {
     public int currWeight;
-    public int maxWeight;
+    public int currTime;
 
-
+    public List<FishSO> caughtFish;
 }

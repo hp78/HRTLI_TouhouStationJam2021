@@ -6,5 +6,5 @@ using UnityEngine;
 public class BoatSO : ItemSO
 {
     [Space(5)]
-    public int maxFishCapacity;
+    public int maxWeight;
 }
