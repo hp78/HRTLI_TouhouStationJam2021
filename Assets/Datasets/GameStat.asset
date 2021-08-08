@@ -14,11 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currStageProgress: 0
   currMoney: 0
+  currBoat: {fileID: 0}
+  currRod: {fileID: 0}
+  currBait: {fileID: 0}
+  currCooler: {fileID: 0}
   currBoatIndex: 0
   currRodIndex: 0
   currBaitIndex: 0
   currCoolerIndex: 0
   boatList: []
   rodList: []
-  baitList: []
+  baitList:
+  - {fileID: 11400000, guid: 29dd2d2b890c39640b3ebec202fc9431, type: 2}
   coolerList: []

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: SampleBait
   m_EditorClassIdentifier: 
   isUnlocked: 0
-  itemName: 
+  itemName: Basic Bait
   itemSprite: {fileID: 0}
   price: 0
-  flavorText: 
-  baitSpeed: 0
-  baitLimit: 0
+  flavorText: IT"S PRETTY BASIC
+  baitSpeed: 10
+  baitMaxFish: 10
