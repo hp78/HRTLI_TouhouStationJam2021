@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
 
     [Space(5)]
     public PlayerStatSO playerStat;
+    public CameraController cameraControl;
 
     [Space(5)]
     public LineRenderer lineRend;
@@ -89,14 +90,14 @@ public class PlayerController : MonoBehaviour
 
     void Idle()
     {
-        if (mouseWorldPos.x < -0.5f && tfSuwako.transform.localScale.x > 0)
-        {
-            tfSuwako.transform.localScale = new Vector3(-1, 1, 1);
-        }
-
-        if (mouseWorldPos.x > 0.5f && tfSuwako.transform.localScale.x < 0)
+        if (mouseWorldPos.x < -0.5f && tfSuwako.transform.localScale.x < 0)
         {
             tfSuwako.transform.localScale = new Vector3(1, 1, 1);
+        }
+
+        if (mouseWorldPos.x > 0.5f && tfSuwako.transform.localScale.x > 0)
+        {
+            tfSuwako.transform.localScale = new Vector3(-1, 1, 1);
         }
 
         if (Input.GetMouseButtonUp(0))
@@ -111,23 +112,51 @@ public class PlayerController : MonoBehaviour
     void Casting()
     {
         currState = PlayerState.SINK;
-        
+        cameraControl.isDiving = true;
     }
 
     void Sink()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            currState = PlayerState.REELING;
+
+            if (mouseWorldPos.y > tfHook.position.y - positionEpsilon)
+            {
+                currState = PlayerState.REELING;
+                cameraControl.isDiving = false;
+            }
+
+        }
+
+        if (Input.GetMouseButton(0))
+        {
+            if (mouseWorldPos.x > tfHook.position.x + positionEpsilon)
+            {
+                tfHook.position = Vector3.Lerp(tfHook.position,
+                    new Vector3(mouseWorldPos.x, tfHook.position.y, tfHook.position.z), 0.5f * hookSpeed * Time.deltaTime);
+                //tfHook.position += new Vector3(1, 0) * hookSpeed * Time.deltaTime;
+            }
+            else if (mouseWorldPos.x < tfHook.position.x - positionEpsilon)
+            {
+                tfHook.position = Vector3.Lerp(tfHook.position,
+                    new Vector3(mouseWorldPos.x, tfHook.position.y, tfHook.position.z), 0.5f * hookSpeed * Time.deltaTime);
+                //tfHook.position += new Vector3(-1, 0) * hookSpeed * Time.deltaTime;
+            }
+        }
+        else
+        {
+
         }
 
         if (tfHook.position.y > -100f)
         {
-            tfHook.position -= new Vector3(0, sinkSpeed, 0) * Time.deltaTime;
+            tfHook.position = Vector3.Lerp(tfHook.position,
+                new Vector3(tfHook.position.x, tfHook.position.y - 1f, tfHook.position.z), 0.5f * sinkSpeed * Time.deltaTime);
+            //tfHook.position -= new Vector3(0, sinkSpeed, 0) * Time.deltaTime;
         }
         else
         {
-            currState = PlayerState.REELING;
+            cameraControl.isDiving = false;
         }
     }
 
@@ -141,32 +170,36 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetMouseButton(0))
         {
-            Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
             if (mouseWorldPos.x > tfHook.position.x + positionEpsilon)
             {
-                tfHook.position += new Vector3(1, 0) * hookSpeed * Time.deltaTime;
+                tfHook.position = Vector3.Lerp(tfHook.position,
+                    new Vector3(mouseWorldPos.x, tfHook.position.y, tfHook.position.z), 0.5f * hookSpeed * Time.deltaTime);
+                //tfHook.position += new Vector3(1, 0) * hookSpeed * Time.deltaTime;
             }
             else if (mouseWorldPos.x < tfHook.position.x - positionEpsilon)
             {
-                tfHook.position += new Vector3(-1, 0) * hookSpeed * Time.deltaTime;
+                tfHook.position = Vector3.Lerp(tfHook.position,
+                    new Vector3(mouseWorldPos.x, tfHook.position.y, tfHook.position.z), 0.5f * hookSpeed * Time.deltaTime);
+                //tfHook.position += new Vector3(-1, 0) * hookSpeed * Time.deltaTime;
             }
 
             if (mouseWorldPos.y > tfHook.position.y - positionEpsilon)
             {
-                tfHook.position += new Vector3(0, 1) * reelSpeed * Time.deltaTime;
+                tfHook.position = Vector3.Lerp(tfHook.position,
+                    new Vector3(tfHook.position.x, tfHook.position.y + 1f, tfHook.position.z), 0.5f * reelSpeed * Time.deltaTime);
+                //tfHook.position += new Vector3(0, 1) * reelSpeed * Time.deltaTime;
             }
         }
 
 
-        if (tfHook.position.x < -0.5f && tfSuwako.transform.localScale.x > 0)
-        {
-            tfSuwako.transform.localScale = new Vector3(-1, 1, 1);
-        }
-
-        if (tfHook.position.x > 0.5f && tfSuwako.transform.localScale.x < 0)
+        if (tfHook.position.x < -0.5f && tfSuwako.transform.localScale.x < 0)
         {
             tfSuwako.transform.localScale = new Vector3(1, 1, 1);
+        }
+
+        if (tfHook.position.x > 0.5f && tfSuwako.transform.localScale.x > 0)
+        {
+            tfSuwako.transform.localScale = new Vector3(-1, 1, 1);
         }
     }
 
