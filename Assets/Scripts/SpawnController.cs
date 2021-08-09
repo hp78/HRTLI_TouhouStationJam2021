@@ -6,7 +6,6 @@ public class SpawnController : MonoBehaviour
 {
 
     public Collider2D spawnCircle;
-    public float spawnCircleRadius;
 
     public float FishSpawnCooldown;
     float fishCD;
