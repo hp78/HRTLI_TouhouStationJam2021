@@ -10,7 +10,7 @@ public class FishSO : ScriptableObject
 
     [Space(5)]
     public string fishName;
-    public Sprite fishSprite;
+    public GameObject fishPrefab;
     public float spawnRate;
     public float weight;
 }
