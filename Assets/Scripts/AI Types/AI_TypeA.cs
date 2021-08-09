@@ -34,8 +34,8 @@ public class AI_TypeA : MonoBehaviour
         aIController = GetComponent<FishAIController>();
         limitUpperRangeX = this.transform.position.x + patrolLimitRangeX;
         limitLowerRangeX = this.transform.position.x - patrolLimitRangeX;
-        limitUpperRangeY = this.transform.position.x + patrolLimitRangeY;
-        limitLowerRangeY = this.transform.position.x - patrolLimitRangeY;
+        limitUpperRangeY = this.transform.position.y + patrolLimitRangeY;
+        limitLowerRangeY = this.transform.position.y - patrolLimitRangeY;
         SelectDirection();
     }
 
@@ -78,7 +78,7 @@ public class AI_TypeA : MonoBehaviour
             float ranX = Random.Range(-1f, -0.25f);
             direction = new Vector2(ranX, direction.y);
 
-            directionChangeCD = 5f;
+            directionChangeCD = Random.Range(directionChangeCooldownLowerLimit, directionChangeCooldownUpperLimit);
             aIController.spriteRenderer.flipX = true;
         }
 
@@ -87,7 +87,7 @@ public class AI_TypeA : MonoBehaviour
             float ranX = Random.Range(.25f, 1f);
             direction = new Vector2(ranX, direction.y);
 
-            directionChangeCD = 5f;
+            directionChangeCD = Random.Range(directionChangeCooldownLowerLimit, directionChangeCooldownUpperLimit);
             aIController.spriteRenderer.flipX = false;
         }
 
@@ -96,7 +96,7 @@ public class AI_TypeA : MonoBehaviour
             float ranY = Random.Range(-1f, -0.25f);
             direction = new Vector2(direction.x, ranY);
 
-            directionChangeCD = 5f;
+            directionChangeCD = Random.Range(directionChangeCooldownLowerLimit, directionChangeCooldownUpperLimit);
         }
 
         else if (this.transform.position.y < limitLowerRangeY)
@@ -104,7 +104,7 @@ public class AI_TypeA : MonoBehaviour
             float ranY = Random.Range(.25f, 1f);
             direction = new Vector2(direction.x, ranY);
 
-            directionChangeCD = 5f;
+            directionChangeCD = Random.Range(directionChangeCooldownLowerLimit, directionChangeCooldownUpperLimit);
         }
     }
 }
