@@ -12,6 +12,7 @@ public class SpawnController : MonoBehaviour
     float fishCD;
 
     public int fishLimit;
+    public GameObject fishParent;
     public GameObject trashParent;
 
     public Transform topLimit;

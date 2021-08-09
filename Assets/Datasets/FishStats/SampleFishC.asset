@@ -15,5 +15,5 @@ MonoBehaviour:
   hasCaught: 0
   fishName: SampleFishC
   fishPrefab: {fileID: 3102240765981575727, guid: e4e995d5a6d32a344aeb0824bed2928e, type: 3}
-  spawnRate: 20
+  spawnRate: 30
   weight: 0

@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de02dade98ffd24e89cda569ef9514f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fishSOStats: {fileID: 11400000, guid: b95442fe33a54c643acb184d063afe18, type: 2}
+  fishSOStats: {fileID: 11400000, guid: 8848d565ac10add4aa54799b48a63a27, type: 2}
   spriteRenderer: {fileID: 2873218593913125370}
   col: {fileID: 2873218594184322169}
 --- !u!114 &2873218594184322151
