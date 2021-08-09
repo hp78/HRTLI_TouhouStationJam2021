@@ -14,9 +14,11 @@ public class CameraController : MonoBehaviour
         if (yPos > 0) yPos = 0f;
 
         if(isDiving)
-            transform.position = Vector3.Lerp(transform.position, new Vector3(0, tfHook.position.y - 3f, -10), 0.5f * 10f * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, 
+                new Vector3(0, tfHook.position.y - 3f, -10), 0.5f * 10f * Time.deltaTime);
         else
-            transform.position = Vector3.Lerp(transform.position, new Vector3(0, tfHook.position.y + 3f, -10), 0.5f * 10f * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, 
+                new Vector3(0, tfHook.position.y + 3f, -10), 0.5f * 10f * Time.deltaTime);
 
     }
 }

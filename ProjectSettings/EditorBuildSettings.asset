@@ -6,6 +6,30 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/MainMenu.unity
+    guid: 9f996c4ab363cca49bc7bcf5fb94a65b
+  - enabled: 1
+    path: Assets/Scenes/WorldMap.unity
+    guid: ed3d3ac781645f443b902d10ab5fd478
+  - enabled: 1
+    path: Assets/Scenes/TownMap.unity
+    guid: b2876cc9e5aaa424ebae7fbde3af494f
+  - enabled: 1
+    path: Assets/Scenes/BaitShop.unity
+    guid: 05e38dae8b926a54c9aff998380b5163
+  - enabled: 1
+    path: Assets/Scenes/BoatShop.unity
+    guid: 9df0a176e3b0f8646930e3674d307d71
+  - enabled: 1
+    path: Assets/Scenes/CoolerShop.unity
+    guid: 883bf7611e01f534aa4110cab457d40b
+  - enabled: 1
+    path: Assets/Scenes/RodShop.unity
+    guid: e007b0c3a8f82fa43b1bf8f9aa3f8579
+  - enabled: 1
+    path: Assets/Scenes/SuikaShop.unity
+    guid: b8c000474afd47a4d9a43be7ea5449c9
+  - enabled: 1
+    path: Assets/Scenes/SuikaWInScreen.unity
+    guid: 42bcd142f1e23b446a6d755a2699b923
   m_configObjects: {}

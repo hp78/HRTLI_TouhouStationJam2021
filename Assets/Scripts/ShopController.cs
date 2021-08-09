@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class ShopController : MonoBehaviour
@@ -164,5 +165,10 @@ public class ShopController : MonoBehaviour
         {
             gis.RefreshItem();
         }
+    }
+
+    public void GoToTownScene()
+    {
+        SceneManager.LoadScene("TownMap");
     }
 }
