@@ -11,7 +11,7 @@ public class FishSO : ScriptableObject
     [Space(5)]
     public string fishName;
     public GameObject fishPrefab;
-    public float spawnRate;
-    public float weight;
+    public int spawnRate;
+    public int weight;
 }
 

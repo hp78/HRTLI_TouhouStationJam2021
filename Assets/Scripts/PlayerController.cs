@@ -113,6 +113,8 @@ public class PlayerController : MonoBehaviour
     {
         currState = PlayerState.SINK;
         cameraControl.isDiving = true;
+        hookControl.SetCollider(false);
+
     }
 
     void Sink()
@@ -165,6 +167,7 @@ public class PlayerController : MonoBehaviour
         if (tfHook.position.y >= -3f)
         {
             hookControl.SetVisible(false);
+            hookControl.ClearWeight();
             lineRend.enabled = false;
             currState = PlayerState.CAUGHT;
         }
@@ -189,6 +192,7 @@ public class PlayerController : MonoBehaviour
                     new Vector3(tfHook.position.x, tfHook.position.y + 1f, tfHook.position.z), 0.5f * reelSpeed * Time.deltaTime);
                 //tfHook.position += new Vector3(0, 1) * reelSpeed * Time.deltaTime;
             }
+            hookControl.SetCollider(true);
         }
 
 

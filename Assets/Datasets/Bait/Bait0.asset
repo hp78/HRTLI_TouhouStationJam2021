@@ -18,4 +18,4 @@ MonoBehaviour:
   price: 0
   flavorText: asdfasdf
   baitSpeed: 5
-  baitMaxFish: 5
+  baitMaxFish: 150

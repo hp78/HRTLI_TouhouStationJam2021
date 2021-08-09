@@ -18,4 +18,4 @@ MonoBehaviour:
   price: 0
   flavorText: IT"S PRETTY BASIC
   baitSpeed: 10
-  baitMaxFish: 10
+  baitMaxFish: 150

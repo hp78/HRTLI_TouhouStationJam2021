@@ -92,7 +92,9 @@ public class SpawnController : MonoBehaviour
                 fishList.Remove(fish);             
             }
         trashList.Clear();
-        fishList.Add(Instantiate(SelectFish().fishPrefab, spawnCircle.transform.position, spawnCircle.transform.rotation));
+        GameObject newFish = Instantiate(SelectFish().fishPrefab, spawnCircle.transform.position, spawnCircle.transform.rotation);
+        newFish.transform.SetParent(fishParent.transform);
+        fishList.Add(newFish);
         fishCount = fishList.Count;
 
     }
@@ -107,7 +109,9 @@ public class SpawnController : MonoBehaviour
 
             Vector2 spawnpoint = new Vector2(ranX, ranY);
 
-            fishList.Add(Instantiate(SelectFish().fishPrefab, spawnpoint, spawnCircle.transform.rotation));
+            GameObject newFish = Instantiate(SelectFish().fishPrefab, spawnpoint, spawnCircle.transform.rotation);
+            newFish.transform.SetParent(fishParent.transform);
+            fishList.Add(newFish);
         }
         fishCount = fishList.Count;
 
@@ -129,7 +133,7 @@ public class SpawnController : MonoBehaviour
 
     FishSO SelectFish()
     {
-        float totalRate = 0;
+        int totalRate = 0;
 
         foreach(FishSO i in SpawnFishPool)
         {
@@ -138,7 +142,7 @@ public class SpawnController : MonoBehaviour
 
         foreach (FishSO i in SpawnFishPool)
         {
-            float chance = Random.Range(0f, totalRate);
+            float chance = Random.Range(0, totalRate);
 
             if(chance <= i.spawnRate)
             {

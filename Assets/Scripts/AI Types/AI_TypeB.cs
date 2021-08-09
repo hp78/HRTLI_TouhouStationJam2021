@@ -31,8 +31,9 @@ public class AI_TypeB : MonoBehaviour
         aIController = GetComponent<FishAIController>();
         limitUpperRangeX = this.transform.position.x + patrolLimitRangeX;
         limitLowerRangeX = this.transform.position.x - patrolLimitRangeX;
-        limitUpperRangeY = this.transform.position.x + patrolLimitRangeY;
-        limitLowerRangeY = this.transform.position.x - patrolLimitRangeY;
+        limitUpperRangeY = this.transform.position.y + patrolLimitRangeY;
+        limitLowerRangeY = this.transform.position.y - patrolLimitRangeY;
+        SelectDirection();
     }
 
     // Update is called once per frame
@@ -44,14 +45,7 @@ public class AI_TypeB : MonoBehaviour
 
             if (!outOfRange)
             {
-                float ranX = Random.Range(-1f, 1f);
-                float ranY = Random.Range(-1f, 1f);
-                direction = new Vector2(ranX, ranY);
-
-                directionChangeCD = Random.Range(directionChangeCooldownLowerLimit, directionChangeCooldownUpperLimit);
-                if (ranX < 0.0f) aIController.spriteRenderer.flipX = true;
-                else aIController.spriteRenderer.flipX = false;
-
+                SelectDirection();
             }
 
             rb.AddForce(direction.normalized * speedBurst, ForceMode2D.Impulse);
@@ -63,6 +57,18 @@ public class AI_TypeB : MonoBehaviour
     }
 
 
+    void SelectDirection()
+    {
+        float ranX = Random.Range(-1f, 1f);
+        float ranY = Random.Range(-1f, 1f);
+        direction = new Vector2(ranX, ranY);
+
+        directionChangeCD = Random.Range(directionChangeCooldownLowerLimit, directionChangeCooldownUpperLimit);
+        if (ranX < 0.0f) aIController.spriteRenderer.flipX = true;
+        else aIController.spriteRenderer.flipX = false;
+    }
+
+
     void LimitChecker()
     {
         if (this.transform.position.x > limitUpperRangeX)
@@ -70,7 +76,7 @@ public class AI_TypeB : MonoBehaviour
             float ranX = Random.Range(-1f, -0.25f);
             direction = new Vector2(ranX, direction.y);
 
-            directionChangeCD = 5f;
+            directionChangeCD = Random.Range(directionChangeCooldownLowerLimit, directionChangeCooldownUpperLimit);
             aIController.spriteRenderer.flipX = true;
             outOfRange = true;
         }
@@ -80,7 +86,7 @@ public class AI_TypeB : MonoBehaviour
             float ranX = Random.Range(.25f, 1f);
             direction = new Vector2(ranX, direction.y);
 
-            directionChangeCD = 5f;
+            directionChangeCD = Random.Range(directionChangeCooldownLowerLimit, directionChangeCooldownUpperLimit);
             aIController.spriteRenderer.flipX = false;
             outOfRange = true;
         }
@@ -90,7 +96,7 @@ public class AI_TypeB : MonoBehaviour
             float ranY = Random.Range(-1f, -0.25f);
             direction = new Vector2(direction.x, ranY);
 
-            directionChangeCD = 5f;
+            directionChangeCD = Random.Range(directionChangeCooldownLowerLimit, directionChangeCooldownUpperLimit);
             outOfRange = true;
         }
 
@@ -99,7 +105,7 @@ public class AI_TypeB : MonoBehaviour
             float ranY = Random.Range(.25f, 1f);
             direction = new Vector2(direction.x, ranY);
 
-            directionChangeCD = 5f;
+            directionChangeCD = Random.Range(directionChangeCooldownLowerLimit, directionChangeCooldownUpperLimit);
             outOfRange = true;
         }
     }
