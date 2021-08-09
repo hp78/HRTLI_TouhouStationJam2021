@@ -13,7 +13,7 @@ public class AI_TypeA : MonoBehaviour
 
     public float directionChangeCooldownUpperLimit;
     public float directionChangeCooldownLowerLimit;
-    float directionChangeCD;
+    float directionChangeCD = 0f;
 
     public Rigidbody2D rb;
 
@@ -36,38 +36,40 @@ public class AI_TypeA : MonoBehaviour
         limitLowerRangeX = this.transform.position.x - patrolLimitRangeX;
         limitUpperRangeY = this.transform.position.x + patrolLimitRangeY;
         limitLowerRangeY = this.transform.position.x - patrolLimitRangeY;
+        SelectDirection();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (speed < maxSpeed) speed += acceleration *Time.deltaTime;
 
         if(directionChangeCD < 0.0f)
         {
-            float ranX = Random.Range(-1f, 1f);
-            float ranY = Random.Range(-1f, 1f);
-            direction = new Vector2(ranX, ranY);
-
-            directionChangeCD = Random.Range(directionChangeCooldownLowerLimit, directionChangeCooldownUpperLimit);
-
-            if (ranX < 0.0f) aIController.spriteRenderer.flipX = true;
-            else            aIController.spriteRenderer.flipX = false;
-
-            currAccel = Random.Range(accelerationLowerLimit, accelerationUpperLimit);
+            SelectDirection();
         }
-
 
         if (rb.velocity.magnitude < maxSpeed)
             rb.AddForce(direction.normalized * currAccel * Time.deltaTime, ForceMode2D.Impulse);
-        //else rb.velocity = direction.normalized * (speed * 0.9f);
-
 
         directionChangeCD -= Time.deltaTime;
 
         LimitChecker();
     }
 
+
+    void SelectDirection()
+    {
+        float ranX = Random.Range(-1f, 1f);
+        float ranY = Random.Range(-1f, 1f);
+        direction = new Vector2(ranX, ranY);
+
+        directionChangeCD = Random.Range(directionChangeCooldownLowerLimit, directionChangeCooldownUpperLimit);
+
+        if (ranX < 0.0f) aIController.spriteRenderer.flipX = true;
+        else aIController.spriteRenderer.flipX = false;
+
+        currAccel = Random.Range(accelerationLowerLimit, accelerationUpperLimit);
+    }
 
     void LimitChecker()
     {
