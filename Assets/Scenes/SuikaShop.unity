@@ -590,6 +590,10 @@ PrefabInstance:
       propertyPath: m_text
       value: $4000
       objectReference: {fileID: 0}
+    - target: {fileID: 2629458778654111916, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ef5ffa0e83c598446a54ba91c5e98ecc, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
 --- !u!224 &461068498 stripped
@@ -851,6 +855,10 @@ PrefabInstance:
       propertyPath: m_text
       value: $8000
       objectReference: {fileID: 0}
+    - target: {fileID: 2629458778654111916, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7e78daa9f5b28104384ea73a2c338894, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
 --- !u!224 &1173239842 stripped
@@ -1093,6 +1101,10 @@ PrefabInstance:
       propertyPath: m_text
       value: $1000
       objectReference: {fileID: 0}
+    - target: {fileID: 2629458778654111916, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d9b7ce937d1930348b20841d6ee6407e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
 --- !u!224 &1297266740 stripped
@@ -1531,7 +1543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2629458777230691310, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
       propertyPath: m_text
-      value: Hallf of Dreams
+      value: Hall of Dreams
       objectReference: {fileID: 0}
     - target: {fileID: 2629458777275428548, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1573,6 +1585,10 @@ PrefabInstance:
       propertyPath: m_text
       value: $2000
       objectReference: {fileID: 0}
+    - target: {fileID: 2629458778654111916, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7fe5b707ccfd41e449eaf2fd97e4eb26, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
 --- !u!224 &1687803818 stripped
@@ -1847,6 +1863,34 @@ PrefabInstance:
     - target: {fileID: 2629458777433952239, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
       propertyPath: m_text
       value: $500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2629458778654111916, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ed41296e212409d41913621ab2215437, type: 3}
+    - target: {fileID: 2629458778654111917, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2629458778654111917, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2629458778654111917, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2629458778654111917, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2629458778654111917, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2629458778654111917, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
