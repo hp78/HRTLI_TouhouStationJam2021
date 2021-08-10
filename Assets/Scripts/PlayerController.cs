@@ -27,7 +27,8 @@ public class PlayerController : MonoBehaviour
     [Header("Hook Variables")]
     public HookController hookControl;
 
-    public float reelSpeed = 10.0f;
+    public float reelSpeed = 20.0f;
+    public float autoReelSpeed = 10.0f;
     public float hookSpeed = 10.0f;
     public float sinkSpeed = 10.0f;
     public float positionEpsilon = 0.5f;
@@ -171,25 +172,39 @@ public class PlayerController : MonoBehaviour
             lineRend.enabled = false;
             currState = PlayerState.CAUGHT;
         }
-        else if (Input.GetMouseButton(0))
-        {
-            if (mouseWorldPos.x > tfHook.position.x + positionEpsilon)
-            {
-                tfHook.position = Vector3.Lerp(tfHook.position,
-                    new Vector3(mouseWorldPos.x, tfHook.position.y, tfHook.position.z), 0.5f * hookSpeed * Time.deltaTime);
-                //tfHook.position += new Vector3(1, 0) * hookSpeed * Time.deltaTime;
-            }
-            else if (mouseWorldPos.x < tfHook.position.x - positionEpsilon)
-            {
-                tfHook.position = Vector3.Lerp(tfHook.position,
-                    new Vector3(mouseWorldPos.x, tfHook.position.y, tfHook.position.z), 0.5f * hookSpeed * Time.deltaTime);
-                //tfHook.position += new Vector3(-1, 0) * hookSpeed * Time.deltaTime;
-            }
 
+        HookHorizontalMovement();
+        /*
+        if (mouseWorldPos.x > tfHook.position.x + positionEpsilon)
+        {
+            tfHook.position = Vector3.Lerp(tfHook.position,
+                new Vector3(mouseWorldPos.x, tfHook.position.y, tfHook.position.z), 0.5f * hookSpeed * Time.deltaTime);
+            //tfHook.position += new Vector3(1, 0) * hookSpeed * Time.deltaTime;
+        }
+        else if (mouseWorldPos.x < tfHook.position.x - positionEpsilon)
+        {
+            tfHook.position = Vector3.Lerp(tfHook.position,
+                new Vector3(mouseWorldPos.x, tfHook.position.y, tfHook.position.z), 0.5f * hookSpeed * Time.deltaTime);
+            //tfHook.position += new Vector3(-1, 0) * hookSpeed * Time.deltaTime;
+        }
+        */
+
+        if (Input.GetMouseButton(0))
+        {
             if (mouseWorldPos.y > tfHook.position.y - positionEpsilon)
             {
                 tfHook.position = Vector3.Lerp(tfHook.position,
                     new Vector3(tfHook.position.x, tfHook.position.y + 1f, tfHook.position.z), 0.5f * reelSpeed * Time.deltaTime);
+                //tfHook.position += new Vector3(0, 1) * reelSpeed * Time.deltaTime;
+            }
+            hookControl.SetCollider(true);
+        }
+        else
+        {
+            if (mouseWorldPos.y > tfHook.position.y - positionEpsilon)
+            {
+                tfHook.position = Vector3.Lerp(tfHook.position,
+                    new Vector3(tfHook.position.x, tfHook.position.y + 1f, tfHook.position.z), 0.5f * autoReelSpeed * Time.deltaTime);
                 //tfHook.position += new Vector3(0, 1) * reelSpeed * Time.deltaTime;
             }
             hookControl.SetCollider(true);
@@ -222,6 +237,18 @@ public class PlayerController : MonoBehaviour
     void Timeout()
     {
 
+    }
+
+    void HookHorizontalMovement()
+    {
+        if (mouseWorldPos.x > tfHook.position.x + positionEpsilon)
+        {
+            tfHook.position = new Vector3(Mathf.Min(tfHook.position.x + hookSpeed * Time.deltaTime, Mathf.Lerp(tfHook.position.x, mouseWorldPos.x, 0.5f * hookSpeed * Time.deltaTime)), tfHook.position.y, tfHook.position.z);
+        }
+        else if (mouseWorldPos.x < tfHook.position.x - positionEpsilon)
+        {
+            tfHook.position = new Vector3(Mathf.Max(tfHook.position.x - hookSpeed* Time.deltaTime, Mathf.Lerp(tfHook.position.x, mouseWorldPos.x, 0.5f * hookSpeed* Time.deltaTime)), tfHook.position.y, tfHook.position.z);
+        }
     }
 
     void End()

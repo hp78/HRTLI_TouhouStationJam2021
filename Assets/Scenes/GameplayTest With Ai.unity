@@ -589,8 +589,9 @@ MonoBehaviour:
   sprRod: {fileID: 507887885}
   sprHook: {fileID: 480146076}
   hookControl: {fileID: 480146074}
-  reelSpeed: 10
-  hookSpeed: 20
+  reelSpeed: 20
+  autoReelSpeed: 10
+  hookSpeed: 5
   sinkSpeed: 20
   positionEpsilon: 0.5
 --- !u!4 &610827915
