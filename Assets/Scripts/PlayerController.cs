@@ -42,6 +42,11 @@ public class PlayerController : MonoBehaviour
         lineRend.positionCount = 2;
     }
 
+    void OnApplicationQuit()
+    {
+        playerStat.ClearStats();
+    }
+
     // Update is called once per frame
     void Update()
     {

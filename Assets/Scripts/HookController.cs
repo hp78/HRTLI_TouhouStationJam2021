@@ -6,14 +6,16 @@ using UnityEngine.UI;
 public class HookController : MonoBehaviour
 {
     public GameStatSO gameStats;
+    public PlayerStatSO playerStat;
     SpriteRenderer spriteRend;
     BoxCollider2D col2D;
 
     Text uiText;
     
-
     int weightLimit = 0;
     int currentWeight = 0;
+
+    public List<FishSO> listOfFish;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +44,12 @@ public class HookController : MonoBehaviour
     {
         currentWeight = 0;
         col2D.enabled = true;
+        foreach(FishSO i in listOfFish)
+        {
+            playerStat.caughtFish.Add(i);
+            playerStat.currWeight += i.weight;
+        }
+        listOfFish.Clear();
         UpdateUI();
 
 
@@ -54,10 +62,13 @@ public class HookController : MonoBehaviour
             FishAIController temp = collision.GetComponent<FishAIController>();
             currentWeight += temp.fishSOStats.weight;
             temp.gameObject.SetActive(false);
+            listOfFish.Add(temp.fishSOStats);
 
             if (currentWeight>weightLimit)
             {
                 col2D.enabled = false;
+                listOfFish.Clear();
+
                 SetVisible(false);
             }
             UpdateUI();

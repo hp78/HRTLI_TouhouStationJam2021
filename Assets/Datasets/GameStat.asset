@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currStageProgress: 0
   currMoney: 69420
-  currBoat: {fileID: 0}
+  currBoat: {fileID: 11400000, guid: 33e892a414c78ad449638b17abd60c30, type: 2}
   currRod: {fileID: 0}
   currBait: {fileID: 11400000, guid: 11cfd303bf625304a8145ea3accf61ac, type: 2}
   currCooler: {fileID: 0}

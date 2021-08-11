@@ -120,7 +120,7 @@ public class SpawnController : MonoBehaviour
     IEnumerator UpdateList()
     {
         foreach(GameObject fish in fishList)
-            if(!fish.activeSelf)
+            if((fish) && !fish.activeSelf)
             {
                 trashList.Add(fish);
                 fish.transform.SetParent(trashParent.transform);
@@ -153,10 +153,7 @@ public class SpawnController : MonoBehaviour
                 totalRate -= i.spawnRate;
             }
         }
-
         return null;
-
-
     }
 
 

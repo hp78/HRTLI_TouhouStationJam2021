@@ -9,4 +9,13 @@ public class PlayerStatSO : ScriptableObject
     public int currTime;
 
     public List<FishSO> caughtFish;
+
+    public void ClearStats()
+    {
+        currWeight = 0;
+        caughtFish.Clear();
+    }
+
 }
+
+

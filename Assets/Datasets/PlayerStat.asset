@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: PlayerStat
   m_EditorClassIdentifier: 
   currWeight: 0
-  maxWeight: 0
+  currTime: 0
+  caughtFish: []
