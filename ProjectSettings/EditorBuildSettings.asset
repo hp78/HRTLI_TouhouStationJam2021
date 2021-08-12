@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Shops/SuikaShop.unity
     guid: b8c000474afd47a4d9a43be7ea5449c9
   - enabled: 1
-    path: Assets/Scenes/SuikaWInScreen.unity
+    path: Assets/Scenes/Shops/SuikaWInScreen.unity
     guid: 42bcd142f1e23b446a6d755a2699b923
   - enabled: 1
     path: Assets/Scenes/Stages/STG6_Space.unity
