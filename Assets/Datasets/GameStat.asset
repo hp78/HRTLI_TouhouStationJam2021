@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GameStat
   m_EditorClassIdentifier: 
   currStageProgress: 0
-  currMoney: 431010
+  currMoney: 415510
   currBoat: {fileID: 11400000, guid: 33e892a414c78ad449638b17abd60c30, type: 2}
   currRod: {fileID: 0}
   currBait: {fileID: 11400000, guid: 11cfd303bf625304a8145ea3accf61ac, type: 2}

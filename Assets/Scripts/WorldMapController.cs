@@ -10,7 +10,7 @@ public class WorldMapController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i < gameStats.currStageProgress; i++)
+        for(int i = 0; i <= gameStats.currStageProgress; i++)
         {
             buttons[i].GetComponent<Button>().interactable = true;
         }
