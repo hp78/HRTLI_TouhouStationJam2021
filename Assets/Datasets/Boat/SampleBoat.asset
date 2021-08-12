@@ -17,4 +17,4 @@ MonoBehaviour:
   itemSprite: {fileID: 0}
   price: 0
   flavorText: 
-  maxWeight: 500
+  maxWeight: 150

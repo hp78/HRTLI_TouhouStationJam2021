@@ -17,3 +17,4 @@ MonoBehaviour:
   fishPrefab: {fileID: 2873218594184322168, guid: 6183919a7811f1946b5ccce6f46a7e7a, type: 3}
   spawnRate: 100
   weight: 10
+  value: 100

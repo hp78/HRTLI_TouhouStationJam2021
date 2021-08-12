@@ -7,11 +7,10 @@ public class HookController : MonoBehaviour
 {
     public GameStatSO gameStats;
     public PlayerStatSO playerStat;
+    public GameManager gameManager;
     SpriteRenderer spriteRend;
     BoxCollider2D col2D;
 
-    Text uiText;
-    
     int weightLimit = 0;
     int currentWeight = 0;
 
@@ -23,10 +22,9 @@ public class HookController : MonoBehaviour
         spriteRend = GetComponent<SpriteRenderer>();
         col2D = GetComponent<BoxCollider2D>();
 
-        uiText = GameObject.Find("WeightText").GetComponent<Text>();
-
         weightLimit = ((BaitSO)gameStats.currBait).baitMaxFish;
-        UpdateUI();
+        gameManager.UpdateBaitText(currentWeight);
+
     }
 
     public void SetVisible(bool isVisible)
@@ -50,7 +48,7 @@ public class HookController : MonoBehaviour
             playerStat.currWeight += i.weight;
         }
         listOfFish.Clear();
-        UpdateUI();
+        gameManager.UpdateBaitText(currentWeight);
 
 
     }
@@ -71,25 +69,9 @@ public class HookController : MonoBehaviour
 
                 SetVisible(false);
             }
-            UpdateUI();
+            gameManager.UpdateBaitText(currentWeight);
 
         }
     }
 
-
-    void UpdateUI()
-    {
-        if (!col2D.enabled)
-        {
-            uiText.text = "OVERLOADED BITCH";
-            uiText.color = Color.red;
-        }
-        else
-        {
-            uiText.text = currentWeight + "/" + weightLimit;
-            uiText.color = Color.white;
-
-        }
-
-    }
 }

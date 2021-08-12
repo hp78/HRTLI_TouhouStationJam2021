@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ad80dd7aea0c374e9ad2c05f1ba9846, type: 3}
-  m_Name: SampleFishB
+  m_Script: {fileID: 11500000, guid: 5df7d4cf46f6603408ac497057c47775, type: 3}
+  m_Name: SampleCooler
   m_EditorClassIdentifier: 
-  hasCaught: 0
-  fishName: SampleFishB
-  fishPrefab: {fileID: 231947636074942889, guid: 98f17228e3d56ee44b8f1e935e38b627, type: 3}
-  spawnRate: 50
-  weight: 20
-  value: 250
+  isUnlocked: 0
+  itemName: 
+  itemSprite: {fileID: 0}
+  price: 0
+  flavorText: 
+  timeBonus: 5

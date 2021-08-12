@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7167fe1540e1714ab628ecda795cae2, type: 3}
   m_Name: Bait2
   m_EditorClassIdentifier: 
-  isUnlocked: 0
+  isUnlocked: 1
   itemName: MasterBait
   itemSprite: {fileID: 0}
   price: 6969
   flavorText: lennyface
   baitSpeed: 20
-  baitMaxFish: 20
+  baitMaxFish: 100

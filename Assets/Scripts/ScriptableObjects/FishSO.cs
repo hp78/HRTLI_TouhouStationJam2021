@@ -13,5 +13,6 @@ public class FishSO : ScriptableObject
     public GameObject fishPrefab;
     public int spawnRate;
     public int weight;
+    public int value;
 }
 
