@@ -238,6 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameStats: {fileID: 11400000, guid: 10c3907af157ade41963a9bcafd6f478, type: 2}
   playerStat: {fileID: 11400000, guid: 7afa5bac2b2d8bd479220009cdb12809, type: 2}
+  gameManager: {fileID: 0}
   listOfFish: []
 --- !u!61 &480146075
 BoxCollider2D:
@@ -1202,10 +1203,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   temperatureText: {fileID: 1617267602}
-  weightText: {fileID: 1568383625}
+  tempMarker: {fileID: 0}
+  baitWeightText: {fileID: 0}
+  boatWeightText: {fileID: 0}
   depthText: {fileID: 610599891}
   depthIcon: {fileID: 1105711072}
   gameStat: {fileID: 11400000, guid: 10c3907af157ade41963a9bcafd6f478, type: 2}
+  player: {fileID: 0}
+  stageDuration: 0
+  endScreen: {fileID: 0}
+  endText: {fileID: 0}
 --- !u!4 &1363478639
 Transform:
   m_ObjectHideFlags: 0
@@ -1654,6 +1661,14 @@ PrefabInstance:
       propertyPath: fishLimit
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 351160933327838792, guid: 36ce4e176466b0a418e762bcad247ba3, type: 3}
+      propertyPath: SpawnFishPool.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 351160933327838792, guid: 36ce4e176466b0a418e762bcad247ba3, type: 3}
+      propertyPath: SpawnFishPool.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e7d3ee132825b149acd51e942097da0, type: 2}
     - target: {fileID: 351160933327838793, guid: 36ce4e176466b0a418e762bcad247ba3, type: 3}
       propertyPath: m_RootOrder
       value: 7
