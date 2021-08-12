@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d4c98ac9b5d88c40a22e6fc8e0db50b, type: 3}
   m_Name: GameStat
   m_EditorClassIdentifier: 
-  currStageProgress: 1
-  currMoney: 60951
+  currStageProgress: 0
+  currMoney: 431010
   currBoat: {fileID: 11400000, guid: 33e892a414c78ad449638b17abd60c30, type: 2}
   currRod: {fileID: 0}
   currBait: {fileID: 11400000, guid: 11cfd303bf625304a8145ea3accf61ac, type: 2}

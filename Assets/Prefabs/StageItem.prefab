@@ -96,9 +96,11 @@ MonoBehaviour:
   stageIndex: 1
   stageCost: 500
   stageImage: {fileID: 2629458778654111916}
+  stageDarken: {fileID: 2954551715406632685}
   stageNameText: {fileID: 2629458777230691310}
   stageCostText: {fileID: 2629458777433952239}
   unlockButton: {fileID: 2629458777275428548}
+  suikaShopManager: {fileID: 0}
   gameStat: {fileID: 11400000, guid: 10c3907af157ade41963a9bcafd6f478, type: 2}
 --- !u!1 &2629458777230691296
 GameObject:

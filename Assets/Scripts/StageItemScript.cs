@@ -8,9 +8,11 @@ public class StageItemScript : MonoBehaviour
     public int stageIndex = 1;
     public int stageCost = 500;
     public Image stageImage;
+    public Image stageDarken;
     public TMP_Text stageNameText;
     public TMP_Text stageCostText;
     public Button unlockButton;
+    public SuikaShopManager suikaShopManager;
 
     [Space(5)]
     public GameStatSO gameStat;
@@ -18,21 +20,7 @@ public class StageItemScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(gameStat.currStageProgress + 1 < stageIndex)
-        {
-            unlockButton.interactable = false;
-            stageCostText.text = stageCost.ToString();
-        }
-        else if(gameStat.currStageProgress > stageIndex)
-        {
-            unlockButton.interactable = false;
-            stageCostText.text = "";
-        }
-        else
-        {
-            unlockButton.interactable = true;
-            stageCostText.text = stageCost.ToString();
-        }
+        UpdateButtons();
     }
 
     public void UnlockStage(int stageIndex)
@@ -41,6 +29,34 @@ public class StageItemScript : MonoBehaviour
         {
             gameStat.currMoney -= stageCost;
             gameStat.currStageProgress = stageIndex;
+
+            suikaShopManager.UpdateAllStages();
         }
+    }
+
+    public void UpdateButtons()
+    {
+        if (gameStat.currStageProgress >= stageIndex)
+        {
+            unlockButton.interactable = false;
+            stageCostText.text = "";
+            unlockButton.gameObject.SetActive(false);
+            //stageDarken.gameObject.SetActive(false);
+        }
+        else if (gameStat.currStageProgress + 1 == stageIndex)
+        {
+            unlockButton.interactable = true;
+            stageCostText.text = stageCost.ToString();
+            unlockButton.gameObject.SetActive(true);
+            //stageDarken.gameObject.SetActive(true);
+        }
+        else
+        {
+            unlockButton.interactable = false;
+            stageCostText.text = stageCost.ToString();
+            unlockButton.gameObject.SetActive(true);
+            //stageDarken.gameObject.SetActive(true);
+        }
+
     }
 }

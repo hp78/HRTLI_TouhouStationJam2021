@@ -264,6 +264,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 303899684}
   m_CullTransparentMesh: 1
+--- !u!114 &327462819 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2629458776978283476, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+  m_PrefabInstance: {fileID: 1687803817}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65a4bac22a86114ca80fc4918817c99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &346932392
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,6 +473,10 @@ PrefabInstance:
       propertyPath: stageIndex
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2629458776978283476, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+      propertyPath: suikaShopManager
+      value: 
+      objectReference: {fileID: 1360540627}
     - target: {fileID: 2629458776978283479, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -601,6 +616,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2629458776978283479, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
   m_PrefabInstance: {fileID: 461068497}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &613417999 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2629458776978283476, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+  m_PrefabInstance: {fileID: 461068497}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65a4bac22a86114ca80fc4918817c99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &866331395
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,6 +734,28 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &879024636 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2629458776978283476, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+  m_PrefabInstance: {fileID: 1173239841}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65a4bac22a86114ca80fc4918817c99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &995699614 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2629458776978283476, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+  m_PrefabInstance: {fileID: 1297266739}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65a4bac22a86114ca80fc4918817c99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1173239841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -721,12 +769,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2629458776978283476, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
       propertyPath: stageCost
-      value: 800
+      value: 8000
       objectReference: {fileID: 0}
     - target: {fileID: 2629458776978283476, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
       propertyPath: stageIndex
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2629458776978283476, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+      propertyPath: suikaShopManager
+      value: 
+      objectReference: {fileID: 1360540627}
     - target: {fileID: 2629458776978283479, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -973,6 +1025,10 @@ PrefabInstance:
       propertyPath: stageIndex
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2629458776978283476, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+      propertyPath: suikaShopManager
+      value: 
+      objectReference: {fileID: 1360540627}
     - target: {fileID: 2629458776978283479, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1143,7 +1199,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStat: {fileID: 11400000, guid: 10c3907af157ade41963a9bcafd6f478, type: 2}
-  moneyText: {fileID: 0}
+  moneyText: {fileID: 1410296174}
+  sicList:
+  - {fileID: 1728098013}
+  - {fileID: 995699614}
+  - {fileID: 327462819}
+  - {fileID: 613417999}
+  - {fileID: 879024636}
 --- !u!114 &1360540628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1457,6 +1519,10 @@ PrefabInstance:
       propertyPath: stageIndex
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2629458776978283476, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+      propertyPath: suikaShopManager
+      value: 
+      objectReference: {fileID: 1360540627}
     - target: {fileID: 2629458776978283479, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1596,6 +1662,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2629458776978283479, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
   m_PrefabInstance: {fileID: 1687803817}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1728098013 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2629458776978283476, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+  m_PrefabInstance: {fileID: 2629458778225608775}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65a4bac22a86114ca80fc4918817c99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1762406506
 GameObject:
   m_ObjectHideFlags: 0
@@ -1633,7 +1710,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 475, y: 304}
-  m_SizeDelta: {x: 240, y: 60}
+  m_SizeDelta: {x: 220, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1762406508
 MonoBehaviour:
@@ -1740,6 +1817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StageItem
       objectReference: {fileID: 0}
+    - target: {fileID: 2629458776978283476, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
+      propertyPath: suikaShopManager
+      value: 
+      objectReference: {fileID: 1360540627}
     - target: {fileID: 2629458776978283479, guid: 755c6dac189201c45a13a00b37f10fe8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
