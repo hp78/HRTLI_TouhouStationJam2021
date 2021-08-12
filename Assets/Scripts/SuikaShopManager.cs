@@ -15,7 +15,7 @@ public class SuikaShopManager : MonoBehaviour
     }
     public void UpdateMoney()
     {
-        moneyText.text = "$" + gameStat.currMoney;
+        moneyText.text = "" + gameStat.currMoney;
     }
 
     public void UpdateAllStages()

@@ -41,21 +41,21 @@ public class StageItemScript : MonoBehaviour
             unlockButton.interactable = false;
             stageCostText.text = "";
             unlockButton.gameObject.SetActive(false);
-            //stageDarken.gameObject.SetActive(false);
+            stageDarken.gameObject.SetActive(false);
         }
         else if (gameStat.currStageProgress + 1 == stageIndex)
         {
             unlockButton.interactable = true;
             stageCostText.text = stageCost.ToString();
             unlockButton.gameObject.SetActive(true);
-            //stageDarken.gameObject.SetActive(true);
+            stageDarken.gameObject.SetActive(true);
         }
         else
         {
             unlockButton.interactable = false;
             stageCostText.text = stageCost.ToString();
             unlockButton.gameObject.SetActive(true);
-            //stageDarken.gameObject.SetActive(true);
+            stageDarken.gameObject.SetActive(true);
         }
 
     }

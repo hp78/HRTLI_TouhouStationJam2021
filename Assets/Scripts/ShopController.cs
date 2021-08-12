@@ -28,6 +28,7 @@ public class ShopController : MonoBehaviour
     public Button buyButton;
     public TMP_Text tmpBuyText;
     public TMP_Text tmpPriceText;
+    public Image buyCashImage;
 
     [Space(5)]
     public TMP_Text tmpCurrCashText;
@@ -68,12 +69,14 @@ public class ShopController : MonoBehaviour
             buyButton.interactable = false;
             tmpBuyText.text = "Owned";
             tmpPriceText.text = "";
+            buyCashImage.gameObject.SetActive(false);
         }
         else
         {
             buyButton.interactable = true;
             tmpBuyText.text = "Buy";
             tmpPriceText.text = "$" +item.price;
+            buyCashImage.gameObject.SetActive(true);
         }
         tmpItemDesc.text = item.GetItemDescChunk();
     }
