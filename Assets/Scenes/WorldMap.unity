@@ -1285,7 +1285,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Stage3
+          m_StringArgument: STG3_Heaven
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1097235148
@@ -1552,7 +1552,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Stage5
+          m_StringArgument: STG5_Mountain
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1262016973
@@ -1792,7 +1792,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Stage2
+          m_StringArgument: STG2_SDM
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1586853196
@@ -1925,7 +1925,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Stage6
+          m_StringArgument: STG6_Space
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1604087900
@@ -2058,7 +2058,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Stage4
+          m_StringArgument: STG4_Maus
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1812054391
@@ -2191,7 +2191,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Stage1
+          m_StringArgument: STG1_Shrine
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2037333743
