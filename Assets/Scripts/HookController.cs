@@ -23,6 +23,7 @@ public class HookController : MonoBehaviour
         col2D = GetComponent<BoxCollider2D>();
 
         weightLimit = ((BaitSO)gameStats.currBait).baitMaxFish;
+        spriteRend.sprite = ((BaitSO)gameStats.currBait).itemSprite;
         gameManager.UpdateBaitText(currentWeight);
 
     }
