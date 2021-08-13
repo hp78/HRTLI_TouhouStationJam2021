@@ -144,8 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9222c07eda042843ac524bb0b2d9f2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accelerationUpperLimit: 1
-  accelerationLowerLimit: 0.1
+  accelerationUpperLimit: 3
+  accelerationLowerLimit: 3
   maxSpeed: 3
   directionChangeCooldownUpperLimit: 10
   directionChangeCooldownLowerLimit: 1
