@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 1
   itemName: Basic Bait
-  itemSprite: {fileID: 21300000, guid: d8f37c57c23c72242bbf0dd280b87ce4, type: 3}
+  itemSprite: {fileID: 21300000, guid: 2ccbc0c731c98634c939e4642dc2e7f7, type: 3}
   price: 0
   flavorText: Who are you even trying to bait?
   baitSpeed: 3

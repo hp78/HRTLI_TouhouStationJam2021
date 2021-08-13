@@ -406,6 +406,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7210639231079560965, guid: 7688a615d77638648976143a85149d9a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7367712102270111018, guid: 7688a615d77638648976143a85149d9a, type: 3}
       propertyPath: m_text
       value: Bait Shop
