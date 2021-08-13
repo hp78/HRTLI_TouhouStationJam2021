@@ -38,6 +38,11 @@ public class HookController : MonoBehaviour
             col2D.enabled = canCollide;
     }
 
+    public bool IsOverweight()
+    {
+        return (currentWeight > weightLimit);
+    }
+
     public void ClearWeight()
     {
         currentWeight = 0;

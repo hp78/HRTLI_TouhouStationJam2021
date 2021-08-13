@@ -191,13 +191,20 @@ public class PlayerController : MonoBehaviour
     {
         if (tfHook.position.y >= -3f)
         {
+            if (hookControl.IsOverweight())
+            {
+                cutinFail.gameObject.SetActive(true);
+            }
+            else
+            {
+                cutinSucc.gameObject.SetActive(true);
+            }
+
             hookControl.SetVisible(false);
             hookControl.ClearWeight();
             lineRend.enabled = false;
             currState = PlayerState.CAUGHT;
-
             cutinTimer = 0.0f;
-            cutinSucc.gameObject.SetActive(true);
         }
 
         HookHorizontalMovement();
@@ -255,6 +262,7 @@ public class PlayerController : MonoBehaviour
 
         if (cutinTimer > 1.9f)
         {
+            cutinFail.gameObject.SetActive(false);
             cutinSucc.gameObject.SetActive(false);
             currState = PlayerState.IDLE;
         }
