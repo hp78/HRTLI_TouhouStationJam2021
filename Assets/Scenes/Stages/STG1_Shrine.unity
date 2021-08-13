@@ -637,6 +637,14 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1363478638}
+    - target: {fileID: 5024204150186938832, guid: c899a982833ad84418ce45224ff03a84, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 85c69ffaa4a2c184b8b139bb0dfa48fa, type: 3}
+    - target: {fileID: 5024204150186938832, guid: c899a982833ad84418ce45224ff03a84, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5024204150400611492, guid: c899a982833ad84418ce45224ff03a84, type: 3}
       propertyPath: m_Name
       value: PlayerController
@@ -689,6 +697,10 @@ PrefabInstance:
       propertyPath: cameraControl
       value: 
       objectReference: {fileID: 1131601337}
+    - target: {fileID: 5024204150973503364, guid: c899a982833ad84418ce45224ff03a84, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c899a982833ad84418ce45224ff03a84, type: 3}
 --- !u!1001 &6578370623312944456
