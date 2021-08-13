@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
     public SpriteRenderer sprCooler;
     public SpriteRenderer sprRodUpper;
     public SpriteRenderer sprRodLower;
+    public SpriteRenderer sprBoatForward;
+    public SpriteRenderer sprBoatBack;
     public SpriteRenderer sprHook;
 
     [Header("Hook Variables")]
@@ -51,6 +53,8 @@ public class PlayerController : MonoBehaviour
         lineRend.positionCount = 2;
         sprRodUpper.sprite = ((RodSO)gameStat.currRod).UpperRod;
         sprRodLower.sprite = ((RodSO)gameStat.currRod).LowerRod;
+        sprBoatForward.sprite = ((BoatSO)gameStat.currBoat).fowardSprite;
+        sprBoatBack.sprite = ((BoatSO)gameStat.currBoat).backSprite;
         sprCooler.sprite = (gameStat.currCooler).itemSprite;
     }
 

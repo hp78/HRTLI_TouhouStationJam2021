@@ -436,6 +436,8 @@ MonoBehaviour:
   sprCooler: {fileID: 6043612367075537198}
   sprRodUpper: {fileID: 5024204149961935648}
   sprRodLower: {fileID: 1174838803914348059}
+  sprBoatForward: {fileID: 5024204150973503367}
+  sprBoatBack: {fileID: 3372325990538442561}
   sprHook: {fileID: 5024204149992847537}
   hookControl: {fileID: 5024204149992847543}
   reelSpeed: 20
@@ -443,6 +445,9 @@ MonoBehaviour:
   hookSpeed: 5
   sinkSpeed: 20
   positionEpsilon: 0.5
+  cutinCast: {fileID: 0}
+  cutinFail: {fileID: 0}
+  cutinSucc: {fileID: 0}
 --- !u!120 &5024204150400611488
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -806,7 +811,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: bb20cd0827d069e49a4f0eb7b116007d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

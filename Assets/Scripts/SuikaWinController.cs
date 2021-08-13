@@ -11,6 +11,10 @@ public class SuikaWinController : MonoBehaviour
     public GameStatSO gameStats;
     public Button nextButton;
     public TextMeshProUGUI moneyText;
+    public AudioSource kaching;
+    public Image fishSprite;
+    public TextMeshProUGUI fishName;
+    public TextMeshProUGUI fishValue;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +35,11 @@ public class SuikaWinController : MonoBehaviour
         {
             gameStats.currMoney += i.value;
             moneyText.text = gameStats.currMoney.ToString();
+            fishSprite.sprite = i.fishPrefab.GetComponentInChildren<SpriteRenderer>().sprite;
+            fishName.text = i.fishName;
+            fishValue.text = "Value: $" + i.value.ToString(); ;
+            kaching.Play();
+
             yield return new WaitForSeconds(0.5f);
 
         }
