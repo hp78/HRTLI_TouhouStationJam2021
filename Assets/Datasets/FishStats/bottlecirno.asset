@@ -16,5 +16,5 @@ MonoBehaviour:
   fishName: Bottled Cirno
   fishPrefab: {fileID: 2873218594184322168, guid: 8cd438a3294ecb54d89da8b5fe607373, type: 3}
   spawnRate: 10
-  weight: 10
-  value: 0
+  weight: 9
+  value: 99

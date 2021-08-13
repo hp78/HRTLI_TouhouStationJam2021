@@ -16,5 +16,5 @@ MonoBehaviour:
   fishName: Hourai Doll
   fishPrefab: {fileID: 2873218594184322168, guid: 5bee19adb6e582c4cb8b16627cadd3ff, type: 3}
   spawnRate: 10
-  weight: 10
-  value: 0
+  weight: 5
+  value: 12

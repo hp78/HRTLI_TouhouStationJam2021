@@ -16,5 +16,5 @@ MonoBehaviour:
   fishName: Empty Tin Can
   fishPrefab: {fileID: 2873218594184322168, guid: b937807c8de8878458aa89c9a2e3d5e1, type: 3}
   spawnRate: 10
-  weight: 10
-  value: 0
+  weight: 5
+  value: 1
