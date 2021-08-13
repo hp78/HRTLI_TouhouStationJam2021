@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasCaught: 0
   fishName: Ebi Fry
-  fishPrefab: {fileID: 0}
+  fishPrefab: {fileID: 2873218594184322168, guid: 9dcf4c0cb12a68a47842bcc464ddeca4, type: 3}
   spawnRate: 10
   weight: 10
   value: 0

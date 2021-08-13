@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasCaught: 0
   fishName: Deep Fried Reimu Fumo
-  fishPrefab: {fileID: 0}
+  fishPrefab: {fileID: 2873218594184322168, guid: af54958913470db4ead1ddc9156ee5cf, type: 3}
   spawnRate: 10
   weight: 10
   value: 0

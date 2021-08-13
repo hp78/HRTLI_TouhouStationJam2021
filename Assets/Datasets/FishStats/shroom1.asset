@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasCaught: 0
   fishName: Brown Mushroom
-  fishPrefab: {fileID: 0}
+  fishPrefab: {fileID: 2873218594184322168, guid: 1c4bbdd9c03c38543bb1a108a93ec356, type: 3}
   spawnRate: 10
   weight: 10
   value: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasCaught: 0
   fishName: Plastic Bag
-  fishPrefab: {fileID: 0}
+  fishPrefab: {fileID: 231947636074942889, guid: 33dd715324be9974d95f2998181a51b2, type: 3}
   spawnRate: 10
   weight: 10
   value: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasCaught: 0
   fishName: Frozen Frog
-  fishPrefab: {fileID: 0}
+  fishPrefab: {fileID: 2873218594184322168, guid: 7ea43f45ca8981447af56ae71ed52067, type: 3}
   spawnRate: 10
   weight: 10
   value: 0

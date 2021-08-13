@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasCaught: 0
   fishName: Car Battery
-  fishPrefab: {fileID: 0}
+  fishPrefab: {fileID: 2873218594184322168, guid: 463bc4a3ce222024b931c497ecce91f0, type: 3}
   spawnRate: 10
   weight: 10
   value: 0

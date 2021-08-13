@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasCaught: 0
   fishName: Third Eye
-  fishPrefab: {fileID: 0}
+  fishPrefab: {fileID: 3102240765981575727, guid: 1271f75014ff19f4db240b296b4347e7, type: 3}
   spawnRate: 10
   weight: 10
   value: 0

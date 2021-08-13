@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasCaught: 0
   fishName: Egg
-  fishPrefab: {fileID: 0}
+  fishPrefab: {fileID: 2873218594184322168, guid: 28a4a36046c85654483b95a2bfc8d2a9, type: 3}
   spawnRate: 10
   weight: 10
   value: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasCaught: 0
   fishName: Cheesefish
-  fishPrefab: {fileID: 0}
+  fishPrefab: {fileID: 2873218594184322168, guid: 31ea0ed4e1ef5b34d9adc575698c165d, type: 3}
   spawnRate: 10
   weight: 10
   value: 0
