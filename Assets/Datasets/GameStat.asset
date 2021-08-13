@@ -12,22 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d4c98ac9b5d88c40a22e6fc8e0db50b, type: 3}
   m_Name: GameStat
   m_EditorClassIdentifier: 
-  hasLaunchedGame: 0
-  currStageProgress: 5
-  currMoney: 393224
-  currBoat: {fileID: 11400000, guid: c726f22c7f91c0e4fb7c322f960c0104, type: 2}
-  currRod: {fileID: 11400000, guid: 3830545a2d5414842ae23677cfcb1544, type: 2}
-  currBait: {fileID: 11400000, guid: d2caff46a97332546bcd6e0fd896a65d, type: 2}
-  currCooler: {fileID: 11400000, guid: fc8b537eb28cef6489ad3b874fa0884a, type: 2}
+  hasLaunchedGame: 1
+  currStageProgress: 0
+  currMoney: 100
+  currBoat: {fileID: 11400000, guid: 897a22793d8f08643b13145194a82e68, type: 2}
+  currRod: {fileID: 0}
+  currBait: {fileID: 11400000, guid: a671f4d1deb377045a7ecb0187b0a071, type: 2}
+  currCooler: {fileID: 0}
   currBoatIndex: 0
   currRodIndex: 0
   currBaitIndex: 0
   currCoolerIndex: 0
-  boatList: []
+  boatList:
+  - {fileID: 11400000, guid: 897a22793d8f08643b13145194a82e68, type: 2}
+  - {fileID: 11400000, guid: 4cf3c7586223acd40865df3ea9d1c948, type: 2}
+  - {fileID: 11400000, guid: c726f22c7f91c0e4fb7c322f960c0104, type: 2}
+  - {fileID: 11400000, guid: 619ec2c083d3e84428fd3edcaad06886, type: 2}
+  - {fileID: 11400000, guid: 1346ccf2236935341b0abbc721df941d, type: 2}
+  - {fileID: 11400000, guid: 18f2987f94914154eb2150805016ddac, type: 2}
+  - {fileID: 11400000, guid: 3f78e2e7aa6df64488e654d64e959103, type: 2}
   rodList: []
   baitList:
   - {fileID: 11400000, guid: 11cfd303bf625304a8145ea3accf61ac, type: 2}
   - {fileID: 11400000, guid: 62c090fea2d9e8d40a676c6dcc4ad03d, type: 2}
   - {fileID: 11400000, guid: d2caff46a97332546bcd6e0fd896a65d, type: 2}
-  coolerList: []
+  coolerList:
+  - {fileID: 11400000, guid: fc8b537eb28cef6489ad3b874fa0884a, type: 2}
+  - {fileID: 11400000, guid: 815ad931b88ce4345a4915579df8bd27, type: 2}
+  - {fileID: 11400000, guid: 6484779d940b7da42b708552e0db57c2, type: 2}
+  - {fileID: 11400000, guid: 942963624ae719d4aaf59aeda1703008, type: 2}
+  - {fileID: 11400000, guid: 3ec440449b21dcc458f8cc7092817269, type: 2}
+  - {fileID: 11400000, guid: 2044fc0cf082daf47b22639fefee054a, type: 2}
   fishList: []

@@ -93,6 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameStat: {fileID: 11400000, guid: 10c3907af157ade41963a9bcafd6f478, type: 2}
   itemSO: {fileID: 0}
+  gridItemImage: {fileID: 4730233216354165153}
   itemImage: {fileID: 8795588450571625609}
   buyButton: {fileID: 7001224348024463263}
   tmpPriceText: {fileID: 5525714896041120682}

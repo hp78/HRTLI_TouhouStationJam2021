@@ -10,6 +10,7 @@ public class GridItemScript : MonoBehaviour
     public ItemSO itemSO;
 
     [Space(5)]
+    public Image gridItemImage;
     public Image itemImage;
     public Button buyButton;
     public TMP_Text tmpPriceText;
@@ -18,6 +19,7 @@ public class GridItemScript : MonoBehaviour
     private void Start()
     {
         tmpPriceText.text = itemSO.price.ToString();
+        gridItemImage.sprite = itemSO.itemSprite;
     }
     public void Init(ItemSO nItemSO)
     {
