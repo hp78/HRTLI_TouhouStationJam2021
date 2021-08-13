@@ -36,9 +36,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Shops/SuikaWInScreen.unity
     guid: 42bcd142f1e23b446a6d755a2699b923
   - enabled: 1
-    path: Assets/Scenes/Stages/STG6_Space.unity
-    guid: 8212636007ee5174382a4793020b6a2e
-  - enabled: 1
     path: Assets/Scenes/Stages/STG1_Shrine.unity
     guid: 8891e16986c13124caefe1fd67d98641
   - enabled: 1
@@ -53,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stages/STG5_Mountain.unity
     guid: 7e40db5a174dd6d4591859981cb30981
+  - enabled: 1
+    path: Assets/Scenes/Stages/STG6_Space.unity
+    guid: 8212636007ee5174382a4793020b6a2e
+  - enabled: 1
+    path: Assets/Scenes/EndingScene.unity
+    guid: d7e0e69af0639e34e8e3c7ff9068ccf5
   m_configObjects: {}

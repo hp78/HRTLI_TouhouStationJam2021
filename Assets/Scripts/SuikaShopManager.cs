@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class SuikaShopManager : MonoBehaviour
 {
@@ -25,5 +26,10 @@ public class SuikaShopManager : MonoBehaviour
         {
             sic.UpdateButtons();
         }
+    }
+
+    public void PlayCredits()
+    {
+        SceneManager.LoadScene("EndingScene");
     }
 }
