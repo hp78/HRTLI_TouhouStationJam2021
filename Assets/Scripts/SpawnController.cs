@@ -109,7 +109,12 @@ public class SpawnController : MonoBehaviour
 
             Vector2 spawnpoint = new Vector2(ranX, ranY);
 
-            GameObject newFish = Instantiate(SelectFish().fishPrefab, spawnpoint, spawnCircle.transform.rotation);
+
+            
+            GameObject temp = SelectFish().fishPrefab;
+            while (!temp) temp = SelectFish().fishPrefab;
+
+            GameObject newFish = Instantiate(temp, spawnpoint, spawnCircle.transform.rotation);
             newFish.transform.SetParent(fishParent.transform);
             fishList.Add(newFish);
         }
