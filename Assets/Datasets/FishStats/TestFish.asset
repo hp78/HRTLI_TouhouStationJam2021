@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasCaught: 0
   fishName: Test
-  fishSprite: {fileID: 0}
+  fishPrefab: {fileID: 2873218594184322168, guid: 6183919a7811f1946b5ccce6f46a7e7a, type: 3}
   spawnRate: 10
   weight: 10
+  value: 0
