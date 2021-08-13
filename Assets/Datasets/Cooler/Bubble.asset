@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Bubble
   m_EditorClassIdentifier: 
   isUnlocked: 0
-  itemName: 
+  itemName: Patchouli's Condensed Bubble
   itemSprite: {fileID: 21300000, guid: 30481f17bf3b2c24fb7e6ae315616e97, type: 3}
-  price: 0
-  flavorText: 
-  timeBonus: 0
+  price: 500
+  flavorText: The one from Hisoutensoku. You know, that one!
+  timeBonus: 120

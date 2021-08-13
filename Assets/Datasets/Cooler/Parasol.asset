@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Parasol
   m_EditorClassIdentifier: 
   isUnlocked: 0
-  itemName: 
+  itemName: Remilia's Parasol
   itemSprite: {fileID: 21300000, guid: bb20cd0827d069e49a4f0eb7b116007d, type: 3}
-  price: 0
-  flavorText: 
-  timeBonus: 0
+  price: 200
+  flavorText: Keeps the sun off perfectly, but even the wind is hot...
+  timeBonus: 60
