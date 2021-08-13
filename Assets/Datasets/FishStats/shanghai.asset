@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasCaught: 0
   fishName: Shanghai Doll
-  fishPrefab: {fileID: 0}
+  fishPrefab: {fileID: 2873218594184322168, guid: 6636f56101729d74b95d25b54b468342, type: 3}
   spawnRate: 10
-  weight: 10
-  value: 0
+  weight: 5
+  value: 12
