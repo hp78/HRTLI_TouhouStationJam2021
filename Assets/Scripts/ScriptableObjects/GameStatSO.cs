@@ -6,6 +6,9 @@ using UnityEngine;
 public class GameStatSO : ScriptableObject
 {
     [Space(5)]
+    public bool hasLaunchedGame;
+
+    [Space(5)]
     public int currStageProgress;
     public int currMoney;
 
