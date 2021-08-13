@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d4c98ac9b5d88c40a22e6fc8e0db50b, type: 3}
   m_Name: GameStat
   m_EditorClassIdentifier: 
+  hasLaunchedGame: 0
   currStageProgress: 5
-  currMoney: 395541
-  currBoat: {fileID: 11400000, guid: 33e892a414c78ad449638b17abd60c30, type: 2}
+  currMoney: 401224
+  currBoat: {fileID: 11400000, guid: c726f22c7f91c0e4fb7c322f960c0104, type: 2}
   currRod: {fileID: 11400000, guid: 3830545a2d5414842ae23677cfcb1544, type: 2}
   currBait: {fileID: 11400000, guid: d2caff46a97332546bcd6e0fd896a65d, type: 2}
   currCooler: {fileID: 11400000, guid: fc8b537eb28cef6489ad3b874fa0884a, type: 2}
