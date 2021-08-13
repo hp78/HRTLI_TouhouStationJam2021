@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Letty
   m_EditorClassIdentifier: 
   isUnlocked: 0
-  itemName: 
+  itemName: Letty
   itemSprite: {fileID: 21300000, guid: 6d49146ccdd7a9244a3a491209902558, type: 3}
-  price: 0
-  flavorText: 
-  timeBonus: 0
+  price: 50
+  flavorText: Basically powerless outside of winter.
+  timeBonus: 20
