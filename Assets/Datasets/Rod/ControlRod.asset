@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: ControlRod
   m_EditorClassIdentifier: 
   isUnlocked: 0
-  itemName: 
+  itemName: Control Rod
   itemSprite: {fileID: 21300000, guid: c881bafb693fe444b980016ec3d97088, type: 3}
-  price: 0
-  flavorText: 
-  diveSpeed: 0
-  reelSpeed: 0
-  fastReelSpeed: 0
+  price: 250
+  flavorText: Isn't this a health hazard?
+  diveSpeed: 35
+  reelSpeed: 15
+  fastReelSpeed: 20
   UpperRod: {fileID: 21300000, guid: c881bafb693fe444b980016ec3d97088, type: 3}
   LowerRod: {fileID: 21300000, guid: 3e57fda9f1204a2449a93f023991172d, type: 3}

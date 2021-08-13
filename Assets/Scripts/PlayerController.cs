@@ -18,6 +18,10 @@ public class PlayerController : MonoBehaviour
     public Transform tfRodEnd;
     public Transform tfHook;
     public Transform tfSuwako;
+    public AudioSource reelF;
+    public AudioSource reelS;
+    public AudioSource splash;
+    public AudioClip[] splashes;
 
     [Space(5)]
     public SpriteRenderer sprSuwako;
@@ -137,7 +141,10 @@ public class PlayerController : MonoBehaviour
     {
         cutinTimer += Time.deltaTime;
 
-        if(cutinTimer > 1.9f)
+        if(!splash.isPlaying)
+        PlayRandomSplash();
+
+        if (cutinTimer > 1.9f)
         {
             cutinCast.gameObject.SetActive(false);
             currState = PlayerState.SINK;
@@ -203,12 +210,14 @@ public class PlayerController : MonoBehaviour
             {
                 cutinSucc.gameObject.SetActive(true);
             }
-
+            PlayRandomSplash();
             hookControl.SetVisible(false);
             hookControl.ClearWeight();
             lineRend.enabled = false;
             currState = PlayerState.CAUGHT;
             cutinTimer = 0.0f;
+           
+
         }
 
         HookHorizontalMovement();
@@ -236,6 +245,13 @@ public class PlayerController : MonoBehaviour
                 //tfHook.position += new Vector3(0, 1) * reelSpeed * Time.deltaTime;
             }
             hookControl.SetCollider(true);
+
+            if (!reelF.isPlaying)
+            {
+                reelF.Play();
+                reelS.Stop();
+            }
+
         }
         else
         {
@@ -246,6 +262,13 @@ public class PlayerController : MonoBehaviour
                 //tfHook.position += new Vector3(0, 1) * reelSpeed * Time.deltaTime;
             }
             hookControl.SetCollider(true);
+
+            if (!reelS.isPlaying)
+            {
+                reelS.Play();
+                reelF.Stop();
+            }
+
         }
 
 
@@ -263,12 +286,15 @@ public class PlayerController : MonoBehaviour
     void Caught()
     {
         cutinTimer += Time.deltaTime;
+        reelF.Stop();
 
+        reelS.Stop();
         if (cutinTimer > 1.9f)
         {
             cutinFail.gameObject.SetActive(false);
             cutinSucc.gameObject.SetActive(false);
             currState = PlayerState.IDLE;
+            
         }
     }
 
@@ -301,4 +327,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
+    public void PlayRandomSplash()
+    {
+        var random = Random.Range(0, splashes.Length);
+        splash.volume = 0.3f;
+        splash.Stop();
+        splash.clip = splashes[random];
+        splash.Play();
+    }
 }

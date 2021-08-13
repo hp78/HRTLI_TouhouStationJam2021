@@ -16,9 +16,9 @@ MonoBehaviour:
   currStageProgress: 0
   currMoney: 100
   currBoat: {fileID: 11400000, guid: 897a22793d8f08643b13145194a82e68, type: 2}
-  currRod: {fileID: 0}
-  currBait: {fileID: 11400000, guid: a671f4d1deb377045a7ecb0187b0a071, type: 2}
-  currCooler: {fileID: 0}
+  currRod: {fileID: 11400000, guid: 3830545a2d5414842ae23677cfcb1544, type: 2}
+  currBait: {fileID: 11400000, guid: 29dd2d2b890c39640b3ebec202fc9431, type: 2}
+  currCooler: {fileID: 11400000, guid: 3fdd8960dee55314bb159fc1fef724c3, type: 2}
   currBoatIndex: 0
   currRodIndex: 0
   currBaitIndex: 0
@@ -31,11 +31,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1346ccf2236935341b0abbc721df941d, type: 2}
   - {fileID: 11400000, guid: 18f2987f94914154eb2150805016ddac, type: 2}
   - {fileID: 11400000, guid: 3f78e2e7aa6df64488e654d64e959103, type: 2}
-  rodList: []
+  rodList:
+  - {fileID: 11400000, guid: 3830545a2d5414842ae23677cfcb1544, type: 2}
+  - {fileID: 11400000, guid: 6a8216e1e57e6534da153b01f7193c1b, type: 2}
+  - {fileID: 11400000, guid: 3097f7f1a8489ee45819f8e8305c7f8f, type: 2}
+  - {fileID: 11400000, guid: f291d0ae3aa94654b851d71875f113fd, type: 2}
+  - {fileID: 11400000, guid: d86945bb5b91db24bbf362f126792f43, type: 2}
+  - {fileID: 11400000, guid: bb155f592910792439079092a34d3ec1, type: 2}
   baitList:
-  - {fileID: 11400000, guid: 11cfd303bf625304a8145ea3accf61ac, type: 2}
-  - {fileID: 11400000, guid: 62c090fea2d9e8d40a676c6dcc4ad03d, type: 2}
-  - {fileID: 11400000, guid: d2caff46a97332546bcd6e0fd896a65d, type: 2}
+  - {fileID: 11400000, guid: 29dd2d2b890c39640b3ebec202fc9431, type: 2}
+  - {fileID: 11400000, guid: d958e5ed84c062343986c3a319e51299, type: 2}
+  - {fileID: 11400000, guid: 5893b030cdfd4a14cb0cd50419d8f631, type: 2}
+  - {fileID: 11400000, guid: 83ccb83350d151a4e9eb2c56262962d9, type: 2}
+  - {fileID: 11400000, guid: d54a3b9237431524781c33c3fcdbe862, type: 2}
+  - {fileID: 11400000, guid: 16359552c94c610438e01fa96801c169, type: 2}
+  - {fileID: 11400000, guid: 00a133b110d1f2a409efb53cd8f90acd, type: 2}
+  - {fileID: 11400000, guid: 9b185de4210c61040aa114ed6a994813, type: 2}
   coolerList:
   - {fileID: 11400000, guid: fc8b537eb28cef6489ad3b874fa0884a, type: 2}
   - {fileID: 11400000, guid: 815ad931b88ce4345a4915579df8bd27, type: 2}

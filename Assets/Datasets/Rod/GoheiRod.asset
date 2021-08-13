@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: GoheiRod
   m_EditorClassIdentifier: 
   isUnlocked: 0
-  itemName: 
+  itemName: Gohei
   itemSprite: {fileID: 21300000, guid: b592c16954ea5af46b8a770a13fa7c7d, type: 3}
-  price: 0
-  flavorText: 
-  diveSpeed: 0
-  reelSpeed: 0
-  fastReelSpeed: 0
+  price: 70
+  flavorText: I hope Reimu doesn't find out.
+  diveSpeed: 25
+  reelSpeed: 10
+  fastReelSpeed: 15
   UpperRod: {fileID: 21300000, guid: b592c16954ea5af46b8a770a13fa7c7d, type: 3}
   LowerRod: {fileID: 21300000, guid: b5c01568c4c39eb4dbb7ffe74a711644, type: 3}
