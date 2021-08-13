@@ -67,7 +67,7 @@ public class HookController : MonoBehaviour
             currentWeight += temp.fishSOStats.weight;
             temp.gameObject.SetActive(false);
             listOfFish.Add(temp.fishSOStats);
-
+            gameManager.player.PlayRandomSplash();
             if (currentWeight>weightLimit)
             {
                 col2D.enabled = false;
