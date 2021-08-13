@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
 
     [Space(5)]
     public PlayerStatSO playerStat;
+    public GameStatSO gameStat;
     public CameraController cameraControl;
 
     [Space(5)]
@@ -21,7 +22,9 @@ public class PlayerController : MonoBehaviour
     [Space(5)]
     public SpriteRenderer sprSuwako;
     public SpriteRenderer sprBoat;
-    public SpriteRenderer sprRod;
+    public SpriteRenderer sprCooler;
+    public SpriteRenderer sprRodUpper;
+    public SpriteRenderer sprRodLower;
     public SpriteRenderer sprHook;
 
     [Header("Hook Variables")]
@@ -40,6 +43,9 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         lineRend.positionCount = 2;
+        sprRodUpper.sprite = ((RodSO)gameStat.currRod).UpperRod;
+        sprRodLower.sprite = ((RodSO)gameStat.currRod).LowerRod;
+        sprCooler.sprite = (gameStat.currCooler).itemSprite;
     }
 
     void OnApplicationQuit()

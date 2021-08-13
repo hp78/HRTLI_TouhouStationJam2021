@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 629c467d99b4625428ef6333c7bafdc8, type: 3}
-  m_Name: SampleRod
+  m_Name: ControlRod
   m_EditorClassIdentifier: 
   isUnlocked: 0
   itemName: 

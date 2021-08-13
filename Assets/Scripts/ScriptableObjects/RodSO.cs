@@ -10,6 +10,9 @@ public class RodSO : ItemSO
     public int reelSpeed;
     public int fastReelSpeed;
 
+    public Sprite UpperRod;
+    public Sprite LowerRod;
+
     public override string GetItemDescChunk()
     {
         return "" + flavorText + "\n\n"

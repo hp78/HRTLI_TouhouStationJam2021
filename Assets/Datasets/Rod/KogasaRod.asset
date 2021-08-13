@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 629c467d99b4625428ef6333c7bafdc8, type: 3}
-  m_Name: SampleRod
+  m_Name: KogasaRod
   m_EditorClassIdentifier: 
   isUnlocked: 0
   itemName: 
-  itemSprite: {fileID: 21300000, guid: c881bafb693fe444b980016ec3d97088, type: 3}
+  itemSprite: {fileID: 21300000, guid: 9e41346f178375f459cdc4427357d08a, type: 3}
   price: 0
   flavorText: 
   diveSpeed: 0
   reelSpeed: 0
   fastReelSpeed: 0
-  UpperRod: {fileID: 21300000, guid: c881bafb693fe444b980016ec3d97088, type: 3}
-  LowerRod: {fileID: 21300000, guid: 3e57fda9f1204a2449a93f023991172d, type: 3}
+  UpperRod: {fileID: 21300000, guid: 9e41346f178375f459cdc4427357d08a, type: 3}
+  LowerRod: {fileID: 21300000, guid: c7b3123759372e343a798771a98a9522, type: 3}
