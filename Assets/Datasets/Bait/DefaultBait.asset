@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7167fe1540e1714ab628ecda795cae2, type: 3}
-  m_Name: Bait0
+  m_Name: DefaultBait
   m_EditorClassIdentifier: 
   isUnlocked: 1
-  itemName: test0
+  itemName: Basic Bait
   itemSprite: {fileID: 21300000, guid: d8f37c57c23c72242bbf0dd280b87ce4, type: 3}
   price: 0
-  flavorText: asdfasdf
-  baitSpeed: 5
-  baitMaxFish: 150
+  flavorText: Who are you even trying to bait?
+  baitSpeed: 3
+  baitMaxFish: 70

@@ -2109,6 +2109,34 @@ PrefabInstance:
       propertyPath: fishLimit
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 351160933327838792, guid: 36ce4e176466b0a418e762bcad247ba3, type: 3}
+      propertyPath: SpawnFishPool.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 351160933327838792, guid: 36ce4e176466b0a418e762bcad247ba3, type: 3}
+      propertyPath: SpawnFishPool.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 96f7a0068123c654d85e6bf56421b534, type: 2}
+    - target: {fileID: 351160933327838792, guid: 36ce4e176466b0a418e762bcad247ba3, type: 3}
+      propertyPath: SpawnFishPool.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 06302f4824ecda246a0ddec953186088, type: 2}
+    - target: {fileID: 351160933327838792, guid: 36ce4e176466b0a418e762bcad247ba3, type: 3}
+      propertyPath: SpawnFishPool.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 719c2f237afefa742a75a8fca636ea29, type: 2}
+    - target: {fileID: 351160933327838792, guid: 36ce4e176466b0a418e762bcad247ba3, type: 3}
+      propertyPath: SpawnFishPool.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 9593865629b518045ac6737f8931de03, type: 2}
+    - target: {fileID: 351160933327838792, guid: 36ce4e176466b0a418e762bcad247ba3, type: 3}
+      propertyPath: SpawnFishPool.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 9cb30e2b5543f5d4a9100dd9de8bed63, type: 2}
+    - target: {fileID: 351160933327838792, guid: 36ce4e176466b0a418e762bcad247ba3, type: 3}
+      propertyPath: SpawnFishPool.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 28deb7d144cfe8448aa25f86595f4258, type: 2}
     - target: {fileID: 351160933327838793, guid: 36ce4e176466b0a418e762bcad247ba3, type: 3}
       propertyPath: m_RootOrder
       value: 5
