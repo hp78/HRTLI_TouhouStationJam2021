@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09dd221e672b9814886e1536f87a0def, type: 3}
-  m_Name: SampleBoat
+  m_Name: PalaBoat
   m_EditorClassIdentifier: 
   isUnlocked: 0
   itemName: 
-  itemSprite: {fileID: 21300000, guid: 2a2ea71f3bd857d4aacaff39c8533f93, type: 3}
+  itemSprite: {fileID: 21300000, guid: 003515775235a5141afe0355f32290b7, type: 3}
   price: 0
   flavorText: 
   maxWeight: 150
-  fowardSprite: {fileID: 21300000, guid: 2a2ea71f3bd857d4aacaff39c8533f93, type: 3}
-  backSprite: {fileID: 21300000, guid: 2a2ea71f3bd857d4aacaff39c8533f93, type: 3}
+  fowardSprite: {fileID: 21300000, guid: 003515775235a5141afe0355f32290b7, type: 3}
+  backSprite: {fileID: 21300000, guid: 6f1ef37171eb1c74baeb3641e34f2ad1, type: 3}

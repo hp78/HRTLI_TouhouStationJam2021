@@ -7,7 +7,8 @@ public class BoatSO : ItemSO
 {
     [Space(5)]
     public int maxWeight;
-
+    public Sprite fowardSprite;
+    public Sprite backSprite;
     public override string GetItemDescChunk()
     {
         return "" + flavorText + "\n\n"
