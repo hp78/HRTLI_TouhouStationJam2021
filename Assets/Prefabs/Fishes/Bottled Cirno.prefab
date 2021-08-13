@@ -150,7 +150,7 @@ MonoBehaviour:
   directionChangeCooldownUpperLimit: 20
   directionChangeCooldownLowerLimit: 10
   rb: {fileID: 2873218594184322150}
-  patrolLimitRangeX: 2
+  patrolLimitRangeX: 4
   patrolLimitRangeY: 8
 --- !u!50 &2873218594184322150
 Rigidbody2D:

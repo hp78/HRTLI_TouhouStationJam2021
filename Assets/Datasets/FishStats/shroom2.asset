@@ -9,13 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7167fe1540e1714ab628ecda795cae2, type: 3}
-  m_Name: AnchorBait
+  m_Script: {fileID: 11500000, guid: 6ad80dd7aea0c374e9ad2c05f1ba9846, type: 3}
+  m_Name: shroom2
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  itemName: Anchor
-  itemSprite: {fileID: 21300000, guid: 819d0a953a746c344a816f1cd4f1928c, type: 3}
-  price: 400
-  flavorText: KETSU ANCHOR
-  baitSpeed: 7
-  baitMaxFish: 360
+  hasCaught: 0
+  fishName: Brown Mushroom
+  fishPrefab: {fileID: 0}
+  spawnRate: 10
+  weight: 10
+  value: 0

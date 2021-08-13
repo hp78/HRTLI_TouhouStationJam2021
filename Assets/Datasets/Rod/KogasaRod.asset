@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: KogasaRod
   m_EditorClassIdentifier: 
   isUnlocked: 0
-  itemName: 
+  itemName: Kogasa
   itemSprite: {fileID: 21300000, guid: 9e41346f178375f459cdc4427357d08a, type: 3}
-  price: 0
-  flavorText: 
-  diveSpeed: 0
-  reelSpeed: 0
-  fastReelSpeed: 0
+  price: 150
+  flavorText: She's surprisingly fine with this.
+  diveSpeed: 30
+  reelSpeed: 15
+  fastReelSpeed: 20
   UpperRod: {fileID: 21300000, guid: 9e41346f178375f459cdc4427357d08a, type: 3}
   LowerRod: {fileID: 21300000, guid: c7b3123759372e343a798771a98a9522, type: 3}

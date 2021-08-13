@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: GameStat
   m_EditorClassIdentifier: 
   hasLaunchedGame: 1
-  currStageProgress: 0
-  currMoney: 100
-  currBoat: {fileID: 11400000, guid: 897a22793d8f08643b13145194a82e68, type: 2}
-  currRod: {fileID: 0}
-  currBait: {fileID: 11400000, guid: a671f4d1deb377045a7ecb0187b0a071, type: 2}
-  currCooler: {fileID: 0}
+  currStageProgress: 5
+  currMoney: 5000
+  currBoat: {fileID: 11400000, guid: 4cf3c7586223acd40865df3ea9d1c948, type: 2}
+  currRod: {fileID: 11400000, guid: 3830545a2d5414842ae23677cfcb1544, type: 2}
+  currBait: {fileID: 11400000, guid: 29dd2d2b890c39640b3ebec202fc9431, type: 2}
+  currCooler: {fileID: 11400000, guid: 0107c8068163cde4cba85490c1426bf9, type: 2}
   currBoatIndex: 0
   currRodIndex: 0
   currBaitIndex: 0
