@@ -8,11 +8,13 @@ public class RodSO : ItemSO
     [Space(5)]
     public int diveSpeed;
     public int reelSpeed;
+    public int fastReelSpeed;
 
     public override string GetItemDescChunk()
     {
         return "" + flavorText + "\n\n"
             + "Dive Speed " + diveSpeed + "\n"
-            + "Reel Speed " + diveSpeed + "\n";
+            + "Reel Speed " + reelSpeed + "\n"
+            + "Fast Reel Speed " + fastReelSpeed + "\n";
     }
 }
