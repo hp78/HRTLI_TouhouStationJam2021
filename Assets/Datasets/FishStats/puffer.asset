@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasCaught: 0
   fishName: Pufferfish
-  fishPrefab: {fileID: 0}
+  fishPrefab: {fileID: 2873218594184322168, guid: 7708337008923c34191093d4bbfb30e6, type: 3}
   spawnRate: 10
-  weight: 10
-  value: 0
+  weight: 20
+  value: 25

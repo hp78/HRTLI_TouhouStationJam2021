@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasCaught: 0
   fishName: Familiar Fish
-  fishPrefab: {fileID: 0}
+  fishPrefab: {fileID: 2873218594184322168, guid: d6da1d8031024174c813a117aefa55c1, type: 3}
   spawnRate: 10
   weight: 10
-  value: 0
+  value: 12
