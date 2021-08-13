@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3102240765981575721}
   - component: {fileID: 3102240765981575726}
   m_Layer: 0
-  m_Name: Third Eye
+  m_Name: Youmu
   m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de02dade98ffd24e89cda569ef9514f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fishSOStats: {fileID: 11400000, guid: 96f7a0068123c654d85e6bf56421b534, type: 2}
+  fishSOStats: {fileID: 11400000, guid: 06302f4824ecda246a0ddec953186088, type: 2}
   spriteRenderer: {fileID: 3102240766476602180}
   col: {fileID: 3102240765981575726}
 --- !u!114 &3102240765981575722
@@ -142,7 +142,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 0.6
 --- !u!1 &3102240766476602181
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +214,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f170418f1daa2da4e96e179958abee94, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 48e6bfe705385114da9e5940527221d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
