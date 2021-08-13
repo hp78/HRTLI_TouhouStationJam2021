@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: KaguyaRod
   m_EditorClassIdentifier: 
   isUnlocked: 0
-  itemName: 
+  itemName: Kaguya's Jeweled Branch
   itemSprite: {fileID: 21300000, guid: f9c5c8dc93cedb1448b9a94a8fdd37d2, type: 3}
-  price: 0
-  flavorText: 
-  diveSpeed: 0
-  reelSpeed: 0
-  fastReelSpeed: 0
+  price: 700
+  flavorText: I don't think it actually does anything.
+  diveSpeed: 50
+  reelSpeed: 25
+  fastReelSpeed: 40
   UpperRod: {fileID: 21300000, guid: f9c5c8dc93cedb1448b9a94a8fdd37d2, type: 3}
   LowerRod: {fileID: 21300000, guid: b54c57c85b1958841a74cd749debe46e, type: 3}

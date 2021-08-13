@@ -15,7 +15,7 @@ MonoBehaviour:
   isUnlocked: 0
   itemName: Heavenly Peach
   itemSprite: {fileID: 21300000, guid: 4e3e17f263ce7014dae0c0d05828f681, type: 3}
-  price: 0
-  flavorText: IT"S PRETTY BASIC
-  baitSpeed: 10
-  baitMaxFish: 150
+  price: 150
+  flavorText: Should we really be using this??
+  baitSpeed: 5
+  baitMaxFish: 200
