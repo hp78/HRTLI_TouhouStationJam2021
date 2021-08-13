@@ -17,4 +17,4 @@ MonoBehaviour:
   itemSprite: {fileID: 21300000, guid: 601dbe5196a2fbd4d83b0d2c3ff83fd0, type: 3}
   price: 300
   flavorText: Honestly rather wasteful.
-  timeBonus: 90
+  timeBonus: 120

@@ -71,9 +71,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6972fff320b97c84598b45164f420ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b72681c97f26df64483515417c0c3af5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.51, y: 0.51}
@@ -92,11 +92,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2873218594184322149}
   - component: {fileID: 2873218594184322148}
-  - component: {fileID: 2873218594184322151}
+  - component: {fileID: 1919281009164464091}
   - component: {fileID: 2873218594184322150}
   - component: {fileID: 2873218594184322169}
   m_Layer: 0
-  m_Name: amoung
+  m_Name: Frozen Frog
   m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -129,10 +129,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de02dade98ffd24e89cda569ef9514f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fishSOStats: {fileID: 11400000, guid: 8848d565ac10add4aa54799b48a63a27, type: 2}
+  fishSOStats: {fileID: 11400000, guid: 878a5012c38f5cb44b25544e6e2da7b9, type: 2}
   spriteRenderer: {fileID: 2873218593913125370}
   col: {fileID: 2873218594184322169}
---- !u!114 &2873218594184322151
+--- !u!114 &1919281009164464091
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,17 +141,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 2873218594184322168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9222c07eda042843ac524bb0b2d9f2a, type: 3}
+  m_Script: {fileID: 11500000, guid: 29c9f889e53245849b3bc856092dc31c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accelerationUpperLimit: 3
-  accelerationLowerLimit: 3
-  maxSpeed: 3
-  directionChangeCooldownUpperLimit: 10
-  directionChangeCooldownLowerLimit: 1
+  accelerationUpperLimit: 0.2
+  accelerationLowerLimit: 0.2
+  maxSpeed: 1
+  directionChangeCooldownUpperLimit: 20
+  directionChangeCooldownLowerLimit: 10
   rb: {fileID: 2873218594184322150}
-  patrolLimitRangeX: 5
-  patrolLimitRangeY: 5
+  patrolLimitRangeX: 2
+  patrolLimitRangeY: 8
 --- !u!50 &2873218594184322150
 Rigidbody2D:
   serializedVersion: 4
@@ -188,4 +188,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.6

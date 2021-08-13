@@ -12,10 +12,16 @@ public class MainMenuController : MonoBehaviour
     public ItemSO startBait;
     public ItemSO startCooler;
 
+    [Space(5)]
+    public GameObject resetButton;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(gameStat.currStageProgress == 5)
+        {
+            resetButton.SetActive(true);
+        }
     }
 
     // Update is called once per frame

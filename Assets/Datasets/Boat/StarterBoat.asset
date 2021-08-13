@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: StarterBoat
   m_EditorClassIdentifier: 
   isUnlocked: 0
-  itemName: 
+  itemName: The S.S. Nice
   itemSprite: {fileID: 21300000, guid: 2a2ea71f3bd857d4aacaff39c8533f93, type: 3}
   price: 0
-  flavorText: 
-  maxWeight: 150
+  flavorText: Yeah I know everyone in Gensokyo can fly, but fishing without a boat
+    just isn't the same, y'know?
+  maxWeight: 100
   fowardSprite: {fileID: 21300000, guid: 2a2ea71f3bd857d4aacaff39c8533f93, type: 3}
   backSprite: {fileID: 21300000, guid: 2a2ea71f3bd857d4aacaff39c8533f93, type: 3}

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: TrainBoat
   m_EditorClassIdentifier: 
   isUnlocked: 0
-  itemName: 
+  itemName: Train Carriage From Somewhere
   itemSprite: {fileID: 21300000, guid: 2aa62ca07330c424695c556942ccc141, type: 3}
-  price: 0
-  flavorText: 
-  maxWeight: 150
+  price: 320
+  flavorText: Please put this back where it belongs afterwards, Yukari...
+  maxWeight: 360
   fowardSprite: {fileID: 21300000, guid: 2aa62ca07330c424695c556942ccc141, type: 3}
   backSprite: {fileID: 21300000, guid: 2db1034b6689a9240896e1b5f351bedf, type: 3}
