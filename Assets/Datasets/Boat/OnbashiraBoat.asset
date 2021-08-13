@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: OnbashiraBoat
   m_EditorClassIdentifier: 
   isUnlocked: 0
-  itemName: 
+  itemName: Onbashira
   itemSprite: {fileID: 21300000, guid: 8f17ed19c6a5fc84ab032a239d955af2, type: 3}
-  price: 0
-  flavorText: 
-  maxWeight: 150
+  price: 180
+  flavorText: I'm sure Kanako won't mind.
+  maxWeight: 200
   fowardSprite: {fileID: 21300000, guid: 8f17ed19c6a5fc84ab032a239d955af2, type: 3}
   backSprite: {fileID: 21300000, guid: 8f17ed19c6a5fc84ab032a239d955af2, type: 3}

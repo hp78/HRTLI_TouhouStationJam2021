@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: amoung
   m_EditorClassIdentifier: 
   hasCaught: 0
-  fishName: amoung
+  fishName: Amogus Fish
   fishPrefab: {fileID: 2873218594184322168, guid: 914f8196ce80d904dbad3938c1045e19, type: 3}
   spawnRate: 10
   weight: 10

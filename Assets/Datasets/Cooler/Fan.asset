@@ -17,4 +17,4 @@ MonoBehaviour:
   itemSprite: {fileID: 21300000, guid: 221b9181c2b29994da04bd3c95e468e0, type: 3}
   price: 120
   flavorText: Gotta make do with what you got...
-  timeBonus: 30
+  timeBonus: 40
