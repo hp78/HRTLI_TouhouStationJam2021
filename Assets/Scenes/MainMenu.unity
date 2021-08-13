@@ -1823,8 +1823,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1565893211}
   - component: {fileID: 1565893210}
+  - component: {fileID: 1565893212}
   m_Layer: 0
-  m_Name: MapManager
+  m_Name: Managers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1856,6 +1857,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1565893212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565893209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddbcd542c72243e41986ae947c2893ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameStat: {fileID: 11400000, guid: 10c3907af157ade41963a9bcafd6f478, type: 2}
+  startBoat: {fileID: 11400000, guid: 29dd2d2b890c39640b3ebec202fc9431, type: 2}
+  startRod: {fileID: 11400000, guid: 33e892a414c78ad449638b17abd60c30, type: 2}
+  startBait: {fileID: 11400000, guid: a671f4d1deb377045a7ecb0187b0a071, type: 2}
+  startCooler: {fileID: 11400000, guid: 0107c8068163cde4cba85490c1426bf9, type: 2}
 --- !u!1 &1647533304
 GameObject:
   m_ObjectHideFlags: 0
@@ -2797,10 +2815,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1565893210}
-        m_TargetAssemblyTypeName: MapManager, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
+      - m_Target: {fileID: 1565893212}
+        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
