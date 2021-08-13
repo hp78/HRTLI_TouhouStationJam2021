@@ -36,6 +36,12 @@ public class PlayerController : MonoBehaviour
     public float sinkSpeed = 10.0f;
     public float positionEpsilon = 0.5f;
 
+    [Header("Cut-ins")]
+    public GameObject cutinCast;
+    public GameObject cutinFail;
+    public GameObject cutinSucc;
+    float cutinTimer = 0.0f;
+
     //
     Vector3 mouseWorldPos;
 
@@ -118,15 +124,22 @@ public class PlayerController : MonoBehaviour
             currState = PlayerState.CASTING;
             hookControl.SetVisible(true);
             lineRend.enabled = true;
+            cutinTimer = 0.0f;
+            cutinCast.gameObject.SetActive(true);
         }
     }
 
     void Casting()
     {
-        currState = PlayerState.SINK;
-        cameraControl.isDiving = true;
-        hookControl.SetCollider(false);
+        cutinTimer += Time.deltaTime;
 
+        if(cutinTimer > 1.9f)
+        {
+            cutinCast.gameObject.SetActive(false);
+            currState = PlayerState.SINK;
+            cameraControl.isDiving = true;
+            hookControl.SetCollider(false);
+        }
     }
 
     void Sink()
@@ -182,6 +195,9 @@ public class PlayerController : MonoBehaviour
             hookControl.ClearWeight();
             lineRend.enabled = false;
             currState = PlayerState.CAUGHT;
+
+            cutinTimer = 0.0f;
+            cutinSucc.gameObject.SetActive(true);
         }
 
         HookHorizontalMovement();
@@ -235,12 +251,11 @@ public class PlayerController : MonoBehaviour
 
     void Caught()
     {
-        if (Input.GetMouseButton(0))
-        {
+        cutinTimer += Time.deltaTime;
 
-        }
-        else
+        if (cutinTimer > 1.9f)
         {
+            cutinSucc.gameObject.SetActive(false);
             currState = PlayerState.IDLE;
         }
     }
