@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a2fff712121533648a140682373ff05e
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Milk Mustache BB
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 726e2c10962bcc941b6e8bc94546e1f7, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
