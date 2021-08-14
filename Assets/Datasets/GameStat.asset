@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasLaunchedGame: 1
   currStageProgress: 0
-  currMoney: 100
+  currMoney: 0
   currBoat: {fileID: 11400000, guid: 897a22793d8f08643b13145194a82e68, type: 2}
   currRod: {fileID: 11400000, guid: 3830545a2d5414842ae23677cfcb1544, type: 2}
   currBait: {fileID: 11400000, guid: 29dd2d2b890c39640b3ebec202fc9431, type: 2}
