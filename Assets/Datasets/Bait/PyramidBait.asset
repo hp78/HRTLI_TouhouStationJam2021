@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PyramidBait
   m_EditorClassIdentifier: 
   isUnlocked: 0
-  itemName: Cirno Pyramid
+  itemName: Cirnium
   itemSprite: {fileID: 21300000, guid: a28f46f1df45dc840968209c6eebb5d1, type: 3}
   price: 999
   flavorText: THE STRONGEST!!
